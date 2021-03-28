@@ -19,4 +19,10 @@ Route::get('/', function () {
 
 Route::get('/projects', 'App\Http\Controllers\ProjectsController@index');
 Route::get('/projects/{project}', 'App\Http\Controllers\ProjectsController@show');
-Route::post('/projects', 'App\Http\Controllers\ProjectsController@store');
+Route::post('/projects', 'App\Http\Controllers\ProjectsController@store')->middleware('auth');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
