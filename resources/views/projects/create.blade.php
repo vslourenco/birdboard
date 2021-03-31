@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
+
     <h1>Create a Project</h1>
 
     <form action="/projects" method="post">
@@ -20,5 +15,5 @@
         <br><br>
         <button type="submit">Create a Project</button>
     </form>
-</body>
-</html>
+
+@endsection
