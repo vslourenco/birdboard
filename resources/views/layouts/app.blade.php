@@ -16,19 +16,33 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+    <body class="antialiased bg-grey-light">
+        <div class="bg-gray-100">
+            <nav class="bg-white">
+                <div class="container mx-auto">
+                    <div class="flex justify-between items-center py-2">
+                        <a href="{{ url('/') }}">
+                            {{ config('app.name', 'Laravel') }}
+                        </a>
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ config('app.name', 'Laravel') }}
+                        <div>
+                            <div>{{ Auth::user()->name }}</div>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                    {{ __('Log out') }}
+                                </x-dropdown-link>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </header>
+            </nav>
 
             <!-- Page Content -->
-            <main class="flex">
+            <main class="container mx-auto py-4">
                 @yield('content')
             </main>
         </div>
