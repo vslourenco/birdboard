@@ -19,7 +19,9 @@ module.exports = {
     colors: {
         grey: 'rgba(0, 0, 0, 0.4)',
         'grey-light': '#F5F6F9',
-        white: '#FFF'
+        white: '#FFF',
+        blue: '#47CDFF',
+       'blue-light': '#8AE2FE'
     }
   },
 
