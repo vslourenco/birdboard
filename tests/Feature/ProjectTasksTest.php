@@ -5,7 +5,7 @@ namespace Tests\Feature;
 use App\Models\Project;
 use App\Models\Task;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use Tests\Setup\ProjectFactory;
 use Tests\TestCase;
 
 class ProjectTasksTest extends TestCase
@@ -15,11 +15,9 @@ class ProjectTasksTest extends TestCase
     /** @test */
     public function a_project_can_have_tasks()
     {
-        $this->withoutExceptionHandling();
-        $this->signIn();
-
-        $attributes = Project::factory()->raw();
-        $project = auth()->user()->projects()->create($attributes);
+        $project = app(ProjectFactory::class)
+            ->ownedBy($this->signIn())
+            ->create();
 
         $this->post($project->path().'/tasks', ['body' => 'Test body text']);
 
@@ -30,9 +28,9 @@ class ProjectTasksTest extends TestCase
     /** @test */
     public function a_task_requires_a_body()
     {
-        $this->signIn();
-
-        $project = auth()->user()->projects()->create( Project::factory()->raw());
+        $project = app(ProjectFactory::class)
+            ->ownedBy($this->signIn())
+            ->create();
 
         $attributes = Task::factory()->raw(['body'=>'']);
 
@@ -67,12 +65,12 @@ class ProjectTasksTest extends TestCase
     {
         $this->signIn();
 
-        $project = Project::factory()->create();
+        $project = app(ProjectFactory::class)
+            ->withTasks(1)
+            ->create();
 
-        $task = $project->addTask('Test body text');
 
-
-        $this->patch($task->path(), ['body' => 'updated'])
+        $this->patch($project->tasks->first()->path(), ['body' => 'updated'])
             ->assertStatus(403);
 
 
@@ -82,13 +80,12 @@ class ProjectTasksTest extends TestCase
     /** @test */
     public function a_task_can_be_updated()
     {
-        $this->signIn();
+        $project = app(ProjectFactory::class)
+            ->ownedBy($this->signIn())
+            ->withTasks(1)
+            ->create();
 
-        $project = auth()->user()->projects()->create(Project::factory()->raw());
-
-        $task = $project->addTask('Test Task');
-
-        $this->patch($task->path(), [
+        $this->patch($project->tasks[0]->path(), [
             'body' => 'changed',
             'completed' => true
         ]);
