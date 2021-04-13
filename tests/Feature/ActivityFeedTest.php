@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Tests\Setup\ProjectFactory;
 use Tests\TestCase;
 
-class ActivityFeedTest extends TestCase
+class TriggersActivityTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -48,7 +48,6 @@ class ActivityFeedTest extends TestCase
     /** @test */
     public function completing_a_task_generates_project_activity()
     {
-        $this->withoutExceptionHandling();
         $user = $this->signIn();
 
         $project = app(ProjectFactory::class)
@@ -56,9 +55,56 @@ class ActivityFeedTest extends TestCase
             ->withTasks(1)
             ->create();
 
-        $project->tasks->first()->complete();
+        $this->patch($project->tasks[0]->path(), [
+            'body' => 'foobar',
+            'completed' => true
+        ]);
 
         $this->assertCount(3, $project->activity);
         $this->assertEquals('completed_task', $project->activity->last()->description);
+    }
+
+    /** @test */
+    public function incompleting_a_task_generates_project_activity()
+    {
+        $user = $this->signIn();
+
+        $project = app(ProjectFactory::class)
+            ->ownedBy($user)
+            ->withTasks(1)
+            ->create();
+
+
+        $this->patch($project->tasks[0]->path(), [
+            'body' => 'foobar',
+            'completed' => true
+        ]);
+
+        $this->assertCount(3, $project->activity);
+
+        $this->patch($project->tasks[0]->path(), [
+            'body' => 'foobar',
+            'completed' => false
+        ]);
+
+        $project->refresh();
+
+        $this->assertCount(4, $project->activity);
+        $this->assertEquals('incompleted_task', $project->activity->last()->description);
+    }
+
+    /** @test */
+    public function deleting_a_task_generates_project_activity()
+    {
+        $user = $this->signIn();
+
+        $project = app(ProjectFactory::class)
+            ->ownedBy($user)
+            ->withTasks(1)
+            ->create();
+
+        $project->tasks[0]->delete();
+
+        $this->assertCount(3, $project->activity);
     }
 }
