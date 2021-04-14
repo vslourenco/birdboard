@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Task;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\Setup\ProjectFactory;
@@ -34,7 +35,7 @@ class TriggersActivityTest extends TestCase
     }
 
     /** @test */
-    public function updating_a_task_generates_project_activity()
+    public function creating_a_task_generates_project_activity()
     {
         $project = app(ProjectFactory::class)
             ->create();
@@ -42,7 +43,12 @@ class TriggersActivityTest extends TestCase
         $project->addTask('Some Task');
 
         $this->assertCount(2, $project->activity);
-        $this->assertEquals('created_task', $project->activity->last()->description);
+
+        tap($project->activity->last(), function($activity){
+            $this->assertEquals('created_task', $activity->description);
+            $this->assertInstanceOf(Task::class, $activity->subject);
+            $this->assertEquals('Some Task', $activity->subject->body);
+        });
     }
 
     /** @test */
@@ -61,7 +67,12 @@ class TriggersActivityTest extends TestCase
         ]);
 
         $this->assertCount(3, $project->activity);
-        $this->assertEquals('completed_task', $project->activity->last()->description);
+
+        tap($project->activity->last(), function($activity){
+            $this->assertEquals('completed_task', $activity->description);
+            $this->assertInstanceOf(Task::class, $activity->subject);
+            $this->assertEquals('foobar', $activity->subject->body);
+        });
     }
 
     /** @test */
@@ -90,7 +101,12 @@ class TriggersActivityTest extends TestCase
         $project->refresh();
 
         $this->assertCount(4, $project->activity);
-        $this->assertEquals('incompleted_task', $project->activity->last()->description);
+
+        tap($project->activity->last(), function($activity){
+            $this->assertEquals('incompleted_task', $activity->description);
+            $this->assertInstanceOf(Task::class, $activity->subject);
+            $this->assertEquals('foobar', $activity->subject->body);
+        });
     }
 
     /** @test */
