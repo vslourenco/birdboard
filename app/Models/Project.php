@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Traits\RecordsActivity;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Project extends Model
 {
@@ -38,5 +39,13 @@ class Project extends Model
         return $this->hasMany(Activity::class)->latest();
     }
 
+    public function invite(User $user)
+    {
+        return $this->members()->attach($user);
+    }
 
+    public function members()
+    {
+        return $this->belongsToMany(User::class, 'project_members');
+    }
 }
