@@ -132,6 +132,16 @@ class ManageProjectsTest extends TestCase
     }
 
     /** @test */
+    public function an_user_can_see_all_projects_they_have_been_invited()
+    {
+        $userOne = $this->signIn();
+
+        $project = tap(app(ProjectFactory::class)->create())->invite($userOne);
+
+        $this->get('/projects')->assertSee($project->title);
+    }
+
+    /** @test */
     public function a_project_requires_a_title()
     {
         $this->signIn();
