@@ -15,10 +15,20 @@ class InvitationsTest extends TestCase
     public function no_owners_cannot_invite_users()
     {
         $project = Project::factory()->create();
-        $this->actingAs(User::factory()->create())->post($project->path().'/invitations', [
-                'email' => 'mail@mail.com'
-            ])
-            ->assertStatus(403);
+        $user = User::factory()->create();
+
+        $assertInvitationForbidden = function () use ($user, $project){
+            $this->actingAs($user)->post($project->path().'/invitations', [
+                    'email' => 'mail@mail.com'
+                ])
+                ->assertStatus(403);
+        };
+
+        $assertInvitationForbidden();
+
+        $project->invite($user);
+
+        $assertInvitationForbidden();
     }
 
     /** @test */
@@ -46,7 +56,7 @@ class InvitationsTest extends TestCase
             ])
             ->assertSessionHasErrors([
                 'email' => 'The user you are inviting must have an account.'
-            ]);
+            ], null, 'invitations');
     }
 
     /** @test */
