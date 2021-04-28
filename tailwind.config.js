@@ -23,8 +23,13 @@ module.exports = {
         'grey-light': '#F5F6F9',
         white: '#FFF',
         blue: '#47CDFF',
-       'blue-light': '#8AE2FE'
-    }
+       'blue-light': '#8AE2FE',
+       page: 'var(--page-background-color)',
+       card: 'var(--card-background-color)',
+       button: 'var(--button-background-color)',
+       header: 'var(--header-background-color)',
+       default: 'var(--text-default-color)',
+    },
   },
 
   variants: {

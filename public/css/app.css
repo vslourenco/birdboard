@@ -1772,6 +1772,26 @@ select {
   border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
 }
 
+.divide-page > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--page-background-color);
+}
+
+.divide-card > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--card-background-color);
+}
+
+.divide-button > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--button-background-color);
+}
+
+.divide-header > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--header-background-color);
+}
+
+.divide-default > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--text-default-color);
+}
+
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
   border-style: solid;
 }
@@ -2030,6 +2050,26 @@ select {
   background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
 }
 
+.bg-page {
+  background-color: var(--page-background-color);
+}
+
+.bg-card {
+  background-color: var(--card-background-color);
+}
+
+.bg-button {
+  background-color: var(--button-background-color);
+}
+
+.bg-header {
+  background-color: var(--header-background-color);
+}
+
+.bg-default {
+  background-color: var(--text-default-color);
+}
+
 .group:hover .group-hover\:bg-red-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2102,6 +2142,26 @@ select {
 .group:hover .group-hover\:bg-blue-light {
   --tw-bg-opacity: 1;
   background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-page {
+  background-color: var(--page-background-color);
+}
+
+.group:hover .group-hover\:bg-card {
+  background-color: var(--card-background-color);
+}
+
+.group:hover .group-hover\:bg-button {
+  background-color: var(--button-background-color);
+}
+
+.group:hover .group-hover\:bg-header {
+  background-color: var(--header-background-color);
+}
+
+.group:hover .group-hover\:bg-default {
+  background-color: var(--text-default-color);
 }
 
 .focus-within\:bg-red-50:focus-within {
@@ -2178,6 +2238,26 @@ select {
   background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
 }
 
+.focus-within\:bg-page:focus-within {
+  background-color: var(--page-background-color);
+}
+
+.focus-within\:bg-card:focus-within {
+  background-color: var(--card-background-color);
+}
+
+.focus-within\:bg-button:focus-within {
+  background-color: var(--button-background-color);
+}
+
+.focus-within\:bg-header:focus-within {
+  background-color: var(--header-background-color);
+}
+
+.focus-within\:bg-default:focus-within {
+  background-color: var(--text-default-color);
+}
+
 .hover\:bg-red-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2252,6 +2332,26 @@ select {
   background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
 }
 
+.hover\:bg-page:hover {
+  background-color: var(--page-background-color);
+}
+
+.hover\:bg-card:hover {
+  background-color: var(--card-background-color);
+}
+
+.hover\:bg-button:hover {
+  background-color: var(--button-background-color);
+}
+
+.hover\:bg-header:hover {
+  background-color: var(--header-background-color);
+}
+
+.hover\:bg-default:hover {
+  background-color: var(--text-default-color);
+}
+
 .focus\:bg-red-50:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2324,6 +2424,26 @@ select {
 .focus\:bg-blue-light:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+}
+
+.focus\:bg-page:focus {
+  background-color: var(--page-background-color);
+}
+
+.focus\:bg-card:focus {
+  background-color: var(--card-background-color);
+}
+
+.focus\:bg-button:focus {
+  background-color: var(--button-background-color);
+}
+
+.focus\:bg-header:focus {
+  background-color: var(--header-background-color);
+}
+
+.focus\:bg-default:focus {
+  background-color: var(--text-default-color);
 }
 
 .bg-none {
@@ -2437,6 +2557,31 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.from-page {
+  --tw-gradient-from: var(--page-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-card {
+  --tw-gradient-from: var(--card-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-button {
+  --tw-gradient-from: var(--button-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-header {
+  --tw-gradient-from: var(--header-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-default {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .via-red-50 {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -2497,6 +2642,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.via-page {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-card {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-button {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-header {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-default {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .to-red-50 {
   --tw-gradient-to: #fef2f2;
 }
@@ -2555,6 +2720,26 @@ select {
 
 .to-blue-light {
   --tw-gradient-to: #8AE2FE;
+}
+
+.to-page {
+  --tw-gradient-to: var(--page-background-color);
+}
+
+.to-card {
+  --tw-gradient-to: var(--card-background-color);
+}
+
+.to-button {
+  --tw-gradient-to: var(--button-background-color);
+}
+
+.to-header {
+  --tw-gradient-to: var(--header-background-color);
+}
+
+.to-default {
+  --tw-gradient-to: var(--text-default-color);
 }
 
 .hover\:from-red-50:hover {
@@ -2632,6 +2817,31 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.hover\:from-page:hover {
+  --tw-gradient-from: var(--page-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-card:hover {
+  --tw-gradient-from: var(--card-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-button:hover {
+  --tw-gradient-from: var(--button-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-header:hover {
+  --tw-gradient-from: var(--header-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-default:hover {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .hover\:via-red-50:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -2692,6 +2902,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.hover\:via-page:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-card:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-button:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-header:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-default:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .hover\:to-red-50:hover {
   --tw-gradient-to: #fef2f2;
 }
@@ -2750,6 +2980,26 @@ select {
 
 .hover\:to-blue-light:hover {
   --tw-gradient-to: #8AE2FE;
+}
+
+.hover\:to-page:hover {
+  --tw-gradient-to: var(--page-background-color);
+}
+
+.hover\:to-card:hover {
+  --tw-gradient-to: var(--card-background-color);
+}
+
+.hover\:to-button:hover {
+  --tw-gradient-to: var(--button-background-color);
+}
+
+.hover\:to-header:hover {
+  --tw-gradient-to: var(--header-background-color);
+}
+
+.hover\:to-default:hover {
+  --tw-gradient-to: var(--text-default-color);
 }
 
 .focus\:from-red-50:focus {
@@ -2827,6 +3077,31 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.focus\:from-page:focus {
+  --tw-gradient-from: var(--page-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-card:focus {
+  --tw-gradient-from: var(--card-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-button:focus {
+  --tw-gradient-from: var(--button-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-header:focus {
+  --tw-gradient-from: var(--header-background-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-default:focus {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .focus\:via-red-50:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -2887,6 +3162,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
 }
 
+.focus\:via-page:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-card:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-button:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-header:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-default:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .focus\:to-red-50:focus {
   --tw-gradient-to: #fef2f2;
 }
@@ -2945,6 +3240,26 @@ select {
 
 .focus\:to-blue-light:focus {
   --tw-gradient-to: #8AE2FE;
+}
+
+.focus\:to-page:focus {
+  --tw-gradient-to: var(--page-background-color);
+}
+
+.focus\:to-card:focus {
+  --tw-gradient-to: var(--card-background-color);
+}
+
+.focus\:to-button:focus {
+  --tw-gradient-to: var(--button-background-color);
+}
+
+.focus\:to-header:focus {
+  --tw-gradient-to: var(--header-background-color);
+}
+
+.focus\:to-default:focus {
+  --tw-gradient-to: var(--text-default-color);
 }
 
 .bg-opacity-0 {
@@ -3401,6 +3716,26 @@ select {
   border-color: rgba(138, 226, 254, var(--tw-border-opacity));
 }
 
+.border-page {
+  border-color: var(--page-background-color);
+}
+
+.border-card {
+  border-color: var(--card-background-color);
+}
+
+.border-button {
+  border-color: var(--button-background-color);
+}
+
+.border-header {
+  border-color: var(--header-background-color);
+}
+
+.border-default {
+  border-color: var(--text-default-color);
+}
+
 .group:hover .group-hover\:border-red-50 {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -3473,6 +3808,26 @@ select {
 .group:hover .group-hover\:border-blue-light {
   --tw-border-opacity: 1;
   border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-page {
+  border-color: var(--page-background-color);
+}
+
+.group:hover .group-hover\:border-card {
+  border-color: var(--card-background-color);
+}
+
+.group:hover .group-hover\:border-button {
+  border-color: var(--button-background-color);
+}
+
+.group:hover .group-hover\:border-header {
+  border-color: var(--header-background-color);
+}
+
+.group:hover .group-hover\:border-default {
+  border-color: var(--text-default-color);
 }
 
 .focus-within\:border-red-50:focus-within {
@@ -3549,6 +3904,26 @@ select {
   border-color: rgba(138, 226, 254, var(--tw-border-opacity));
 }
 
+.focus-within\:border-page:focus-within {
+  border-color: var(--page-background-color);
+}
+
+.focus-within\:border-card:focus-within {
+  border-color: var(--card-background-color);
+}
+
+.focus-within\:border-button:focus-within {
+  border-color: var(--button-background-color);
+}
+
+.focus-within\:border-header:focus-within {
+  border-color: var(--header-background-color);
+}
+
+.focus-within\:border-default:focus-within {
+  border-color: var(--text-default-color);
+}
+
 .hover\:border-red-50:hover {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -3623,6 +3998,26 @@ select {
   border-color: rgba(138, 226, 254, var(--tw-border-opacity));
 }
 
+.hover\:border-page:hover {
+  border-color: var(--page-background-color);
+}
+
+.hover\:border-card:hover {
+  border-color: var(--card-background-color);
+}
+
+.hover\:border-button:hover {
+  border-color: var(--button-background-color);
+}
+
+.hover\:border-header:hover {
+  border-color: var(--header-background-color);
+}
+
+.hover\:border-default:hover {
+  border-color: var(--text-default-color);
+}
+
 .focus\:border-red-50:focus {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -3695,6 +4090,26 @@ select {
 .focus\:border-blue-light:focus {
   --tw-border-opacity: 1;
   border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+}
+
+.focus\:border-page:focus {
+  border-color: var(--page-background-color);
+}
+
+.focus\:border-card:focus {
+  border-color: var(--card-background-color);
+}
+
+.focus\:border-button:focus {
+  border-color: var(--button-background-color);
+}
+
+.focus\:border-header:focus {
+  border-color: var(--header-background-color);
+}
+
+.focus\:border-default:focus {
+  border-color: var(--text-default-color);
 }
 
 .border-opacity-0 {
@@ -9574,6 +9989,66 @@ select {
   color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
 }
 
+.placeholder-page::-moz-placeholder {
+  color: var(--page-background-color);
+}
+
+.placeholder-page:-ms-input-placeholder {
+  color: var(--page-background-color);
+}
+
+.placeholder-page::placeholder {
+  color: var(--page-background-color);
+}
+
+.placeholder-card::-moz-placeholder {
+  color: var(--card-background-color);
+}
+
+.placeholder-card:-ms-input-placeholder {
+  color: var(--card-background-color);
+}
+
+.placeholder-card::placeholder {
+  color: var(--card-background-color);
+}
+
+.placeholder-button::-moz-placeholder {
+  color: var(--button-background-color);
+}
+
+.placeholder-button:-ms-input-placeholder {
+  color: var(--button-background-color);
+}
+
+.placeholder-button::placeholder {
+  color: var(--button-background-color);
+}
+
+.placeholder-header::-moz-placeholder {
+  color: var(--header-background-color);
+}
+
+.placeholder-header:-ms-input-placeholder {
+  color: var(--header-background-color);
+}
+
+.placeholder-header::placeholder {
+  color: var(--header-background-color);
+}
+
+.placeholder-default::-moz-placeholder {
+  color: var(--text-default-color);
+}
+
+.placeholder-default:-ms-input-placeholder {
+  color: var(--text-default-color);
+}
+
+.placeholder-default::placeholder {
+  color: var(--text-default-color);
+}
+
 .focus\:placeholder-red-50:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -9794,6 +10269,66 @@ select {
 .focus\:placeholder-blue-light:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-page:focus::-moz-placeholder {
+  color: var(--page-background-color);
+}
+
+.focus\:placeholder-page:focus:-ms-input-placeholder {
+  color: var(--page-background-color);
+}
+
+.focus\:placeholder-page:focus::placeholder {
+  color: var(--page-background-color);
+}
+
+.focus\:placeholder-card:focus::-moz-placeholder {
+  color: var(--card-background-color);
+}
+
+.focus\:placeholder-card:focus:-ms-input-placeholder {
+  color: var(--card-background-color);
+}
+
+.focus\:placeholder-card:focus::placeholder {
+  color: var(--card-background-color);
+}
+
+.focus\:placeholder-button:focus::-moz-placeholder {
+  color: var(--button-background-color);
+}
+
+.focus\:placeholder-button:focus:-ms-input-placeholder {
+  color: var(--button-background-color);
+}
+
+.focus\:placeholder-button:focus::placeholder {
+  color: var(--button-background-color);
+}
+
+.focus\:placeholder-header:focus::-moz-placeholder {
+  color: var(--header-background-color);
+}
+
+.focus\:placeholder-header:focus:-ms-input-placeholder {
+  color: var(--header-background-color);
+}
+
+.focus\:placeholder-header:focus::placeholder {
+  color: var(--header-background-color);
+}
+
+.focus\:placeholder-default:focus::-moz-placeholder {
+  color: var(--text-default-color);
+}
+
+.focus\:placeholder-default:focus:-ms-input-placeholder {
+  color: var(--text-default-color);
+}
+
+.focus\:placeholder-default:focus::placeholder {
+  color: var(--text-default-color);
 }
 
 .placeholder-opacity-0::-moz-placeholder {
@@ -13223,6 +13758,26 @@ select {
   --tw-ring-offset-color: #8AE2FE;
 }
 
+.ring-offset-page {
+  --tw-ring-offset-color: var(--page-background-color);
+}
+
+.ring-offset-card {
+  --tw-ring-offset-color: var(--card-background-color);
+}
+
+.ring-offset-button {
+  --tw-ring-offset-color: var(--button-background-color);
+}
+
+.ring-offset-header {
+  --tw-ring-offset-color: var(--header-background-color);
+}
+
+.ring-offset-default {
+  --tw-ring-offset-color: var(--text-default-color);
+}
+
 .focus-within\:ring-offset-red-50:focus-within {
   --tw-ring-offset-color: #fef2f2;
 }
@@ -13283,6 +13838,26 @@ select {
   --tw-ring-offset-color: #8AE2FE;
 }
 
+.focus-within\:ring-offset-page:focus-within {
+  --tw-ring-offset-color: var(--page-background-color);
+}
+
+.focus-within\:ring-offset-card:focus-within {
+  --tw-ring-offset-color: var(--card-background-color);
+}
+
+.focus-within\:ring-offset-button:focus-within {
+  --tw-ring-offset-color: var(--button-background-color);
+}
+
+.focus-within\:ring-offset-header:focus-within {
+  --tw-ring-offset-color: var(--header-background-color);
+}
+
+.focus-within\:ring-offset-default:focus-within {
+  --tw-ring-offset-color: var(--text-default-color);
+}
+
 .focus\:ring-offset-red-50:focus {
   --tw-ring-offset-color: #fef2f2;
 }
@@ -13341,6 +13916,26 @@ select {
 
 .focus\:ring-offset-blue-light:focus {
   --tw-ring-offset-color: #8AE2FE;
+}
+
+.focus\:ring-offset-page:focus {
+  --tw-ring-offset-color: var(--page-background-color);
+}
+
+.focus\:ring-offset-card:focus {
+  --tw-ring-offset-color: var(--card-background-color);
+}
+
+.focus\:ring-offset-button:focus {
+  --tw-ring-offset-color: var(--button-background-color);
+}
+
+.focus\:ring-offset-header:focus {
+  --tw-ring-offset-color: var(--header-background-color);
+}
+
+.focus\:ring-offset-default:focus {
+  --tw-ring-offset-color: var(--text-default-color);
 }
 
 .ring-offset-0 {
@@ -13477,6 +14072,26 @@ select {
   --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
 }
 
+.ring-page {
+  --tw-ring-color: var(--page-background-color);
+}
+
+.ring-card {
+  --tw-ring-color: var(--card-background-color);
+}
+
+.ring-button {
+  --tw-ring-color: var(--button-background-color);
+}
+
+.ring-header {
+  --tw-ring-color: var(--header-background-color);
+}
+
+.ring-default {
+  --tw-ring-color: var(--text-default-color);
+}
+
 .focus-within\:ring-red-50:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -13551,6 +14166,26 @@ select {
   --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
 }
 
+.focus-within\:ring-page:focus-within {
+  --tw-ring-color: var(--page-background-color);
+}
+
+.focus-within\:ring-card:focus-within {
+  --tw-ring-color: var(--card-background-color);
+}
+
+.focus-within\:ring-button:focus-within {
+  --tw-ring-color: var(--button-background-color);
+}
+
+.focus-within\:ring-header:focus-within {
+  --tw-ring-color: var(--header-background-color);
+}
+
+.focus-within\:ring-default:focus-within {
+  --tw-ring-color: var(--text-default-color);
+}
+
 .focus\:ring-red-50:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -13623,6 +14258,26 @@ select {
 .focus\:ring-blue-light:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+}
+
+.focus\:ring-page:focus {
+  --tw-ring-color: var(--page-background-color);
+}
+
+.focus\:ring-card:focus {
+  --tw-ring-color: var(--card-background-color);
+}
+
+.focus\:ring-button:focus {
+  --tw-ring-color: var(--button-background-color);
+}
+
+.focus\:ring-header:focus {
+  --tw-ring-color: var(--header-background-color);
+}
+
+.focus\:ring-default:focus {
+  --tw-ring-color: var(--text-default-color);
 }
 
 .ring-opacity-0 {
@@ -13923,6 +14578,26 @@ select {
   color: rgba(138, 226, 254, var(--tw-text-opacity));
 }
 
+.text-page {
+  color: var(--page-background-color);
+}
+
+.text-card {
+  color: var(--card-background-color);
+}
+
+.text-button {
+  color: var(--button-background-color);
+}
+
+.text-header {
+  color: var(--header-background-color);
+}
+
+.text-default {
+  color: var(--text-default-color);
+}
+
 .group:hover .group-hover\:text-red-50 {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -13995,6 +14670,26 @@ select {
 .group:hover .group-hover\:text-blue-light {
   --tw-text-opacity: 1;
   color: rgba(138, 226, 254, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-page {
+  color: var(--page-background-color);
+}
+
+.group:hover .group-hover\:text-card {
+  color: var(--card-background-color);
+}
+
+.group:hover .group-hover\:text-button {
+  color: var(--button-background-color);
+}
+
+.group:hover .group-hover\:text-header {
+  color: var(--header-background-color);
+}
+
+.group:hover .group-hover\:text-default {
+  color: var(--text-default-color);
 }
 
 .focus-within\:text-red-50:focus-within {
@@ -14071,6 +14766,26 @@ select {
   color: rgba(138, 226, 254, var(--tw-text-opacity));
 }
 
+.focus-within\:text-page:focus-within {
+  color: var(--page-background-color);
+}
+
+.focus-within\:text-card:focus-within {
+  color: var(--card-background-color);
+}
+
+.focus-within\:text-button:focus-within {
+  color: var(--button-background-color);
+}
+
+.focus-within\:text-header:focus-within {
+  color: var(--header-background-color);
+}
+
+.focus-within\:text-default:focus-within {
+  color: var(--text-default-color);
+}
+
 .hover\:text-red-50:hover {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -14145,6 +14860,26 @@ select {
   color: rgba(138, 226, 254, var(--tw-text-opacity));
 }
 
+.hover\:text-page:hover {
+  color: var(--page-background-color);
+}
+
+.hover\:text-card:hover {
+  color: var(--card-background-color);
+}
+
+.hover\:text-button:hover {
+  color: var(--button-background-color);
+}
+
+.hover\:text-header:hover {
+  color: var(--header-background-color);
+}
+
+.hover\:text-default:hover {
+  color: var(--text-default-color);
+}
+
 .focus\:text-red-50:focus {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -14217,6 +14952,26 @@ select {
 .focus\:text-blue-light:focus {
   --tw-text-opacity: 1;
   color: rgba(138, 226, 254, var(--tw-text-opacity));
+}
+
+.focus\:text-page:focus {
+  color: var(--page-background-color);
+}
+
+.focus\:text-card:focus {
+  color: var(--card-background-color);
+}
+
+.focus\:text-button:focus {
+  color: var(--button-background-color);
+}
+
+.focus\:text-header:focus {
+  color: var(--header-background-color);
+}
+
+.focus\:text-default:focus {
+  color: var(--text-default-color);
 }
 
 .text-opacity-0 {
@@ -19144,8 +19899,7 @@ select {
 }
 
 .button {
-  --tw-bg-opacity: 1;
-  background-color: rgba(71, 205, 255, var(--tw-bg-opacity));
+  background-color: var(--button-background-color);
   border-radius: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -19160,12 +19914,27 @@ select {
 }
 
 .card {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: var(--card-background-color);
   border-radius: 0.5rem;
   padding: 1.25rem;
   --tw-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.08);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.theme-light {
+  --page-background-color: #F5F6F9;
+  --card-background-color: #FFF;
+  --button-background-color: #47CDFF;
+  --header-background-color: #FFF;
+  --text-default-color: #222;
+}
+
+.theme-dark {
+  --page-background-color: #17181E;
+  --card-background-color: #1F2027;
+  --button-background-color: #59B6F9;
+  --header-background-color: #1F2027;
+  --text-default-color: #FFF;
 }
 
 @media (min-width: 640px) {
@@ -20193,6 +20962,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
   }
 
+  .sm\:divide-page > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--page-background-color);
+  }
+
+  .sm\:divide-card > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--card-background-color);
+  }
+
+  .sm\:divide-button > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--button-background-color);
+  }
+
+  .sm\:divide-header > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--header-background-color);
+  }
+
+  .sm\:divide-default > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
   .sm\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -20451,6 +21240,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .sm\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .sm\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .sm\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .sm\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .sm\:bg-default {
+    background-color: var(--text-default-color);
+  }
+
   .group:hover .sm\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -20523,6 +21332,26 @@ select {
   .group:hover .sm\:group-hover\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-default {
+    background-color: var(--text-default-color);
   }
 
   .sm\:focus-within\:bg-red-50:focus-within {
@@ -20599,6 +21428,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .sm\:focus-within\:bg-page:focus-within {
+    background-color: var(--page-background-color);
+  }
+
+  .sm\:focus-within\:bg-card:focus-within {
+    background-color: var(--card-background-color);
+  }
+
+  .sm\:focus-within\:bg-button:focus-within {
+    background-color: var(--button-background-color);
+  }
+
+  .sm\:focus-within\:bg-header:focus-within {
+    background-color: var(--header-background-color);
+  }
+
+  .sm\:focus-within\:bg-default:focus-within {
+    background-color: var(--text-default-color);
+  }
+
   .sm\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -20673,6 +21522,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .sm\:hover\:bg-page:hover {
+    background-color: var(--page-background-color);
+  }
+
+  .sm\:hover\:bg-card:hover {
+    background-color: var(--card-background-color);
+  }
+
+  .sm\:hover\:bg-button:hover {
+    background-color: var(--button-background-color);
+  }
+
+  .sm\:hover\:bg-header:hover {
+    background-color: var(--header-background-color);
+  }
+
+  .sm\:hover\:bg-default:hover {
+    background-color: var(--text-default-color);
+  }
+
   .sm\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -20745,6 +21614,26 @@ select {
   .sm\:focus\:bg-blue-light:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus\:bg-page:focus {
+    background-color: var(--page-background-color);
+  }
+
+  .sm\:focus\:bg-card:focus {
+    background-color: var(--card-background-color);
+  }
+
+  .sm\:focus\:bg-button:focus {
+    background-color: var(--button-background-color);
+  }
+
+  .sm\:focus\:bg-header:focus {
+    background-color: var(--header-background-color);
+  }
+
+  .sm\:focus\:bg-default:focus {
+    background-color: var(--text-default-color);
   }
 
   .sm\:bg-none {
@@ -20858,6 +21747,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:from-page {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-card {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-button {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-header {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-default {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -20918,6 +21832,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:via-page {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-card {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-button {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-header {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-default {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -20976,6 +21910,26 @@ select {
 
   .sm\:to-blue-light {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .sm\:to-page {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .sm\:to-card {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .sm\:to-button {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .sm\:to-header {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .sm\:to-default {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .sm\:hover\:from-red-50:hover {
@@ -21053,6 +22007,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:hover\:from-page:hover {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-card:hover {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-button:hover {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-header:hover {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-default:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -21113,6 +22092,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:hover\:via-page:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-card:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-button:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-header:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-default:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -21171,6 +22170,26 @@ select {
 
   .sm\:hover\:to-blue-light:hover {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .sm\:hover\:to-page:hover {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .sm\:hover\:to-card:hover {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .sm\:hover\:to-button:hover {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .sm\:hover\:to-header:hover {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .sm\:hover\:to-default:hover {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .sm\:focus\:from-red-50:focus {
@@ -21248,6 +22267,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:focus\:from-page:focus {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-card:focus {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-button:focus {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-header:focus {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-default:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -21308,6 +22352,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .sm\:focus\:via-page:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-card:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-button:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-header:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-default:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -21366,6 +22430,26 @@ select {
 
   .sm\:focus\:to-blue-light:focus {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .sm\:focus\:to-page:focus {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .sm\:focus\:to-card:focus {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .sm\:focus\:to-button:focus {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .sm\:focus\:to-header:focus {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .sm\:focus\:to-default:focus {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .sm\:bg-opacity-0 {
@@ -21822,6 +22906,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .sm\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .sm\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .sm\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .sm\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .sm\:border-default {
+    border-color: var(--text-default-color);
+  }
+
   .group:hover .sm\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -21894,6 +22998,26 @@ select {
   .group:hover .sm\:group-hover\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-default {
+    border-color: var(--text-default-color);
   }
 
   .sm\:focus-within\:border-red-50:focus-within {
@@ -21970,6 +23094,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .sm\:focus-within\:border-page:focus-within {
+    border-color: var(--page-background-color);
+  }
+
+  .sm\:focus-within\:border-card:focus-within {
+    border-color: var(--card-background-color);
+  }
+
+  .sm\:focus-within\:border-button:focus-within {
+    border-color: var(--button-background-color);
+  }
+
+  .sm\:focus-within\:border-header:focus-within {
+    border-color: var(--header-background-color);
+  }
+
+  .sm\:focus-within\:border-default:focus-within {
+    border-color: var(--text-default-color);
+  }
+
   .sm\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -22044,6 +23188,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .sm\:hover\:border-page:hover {
+    border-color: var(--page-background-color);
+  }
+
+  .sm\:hover\:border-card:hover {
+    border-color: var(--card-background-color);
+  }
+
+  .sm\:hover\:border-button:hover {
+    border-color: var(--button-background-color);
+  }
+
+  .sm\:hover\:border-header:hover {
+    border-color: var(--header-background-color);
+  }
+
+  .sm\:hover\:border-default:hover {
+    border-color: var(--text-default-color);
+  }
+
   .sm\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -22116,6 +23280,26 @@ select {
   .sm\:focus\:border-blue-light:focus {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .sm\:focus\:border-page:focus {
+    border-color: var(--page-background-color);
+  }
+
+  .sm\:focus\:border-card:focus {
+    border-color: var(--card-background-color);
+  }
+
+  .sm\:focus\:border-button:focus {
+    border-color: var(--button-background-color);
+  }
+
+  .sm\:focus\:border-header:focus {
+    border-color: var(--header-background-color);
+  }
+
+  .sm\:focus\:border-default:focus {
+    border-color: var(--text-default-color);
   }
 
   .sm\:border-opacity-0 {
@@ -27995,6 +29179,66 @@ select {
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
   }
 
+  .sm\:placeholder-page::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:placeholder-page:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:placeholder-page::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:placeholder-card::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:placeholder-card:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:placeholder-card::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:placeholder-button::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:placeholder-button:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:placeholder-button::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:placeholder-header::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:placeholder-header:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:placeholder-header::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:placeholder-default::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:placeholder-default:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:placeholder-default::placeholder {
+    color: var(--text-default-color);
+  }
+
   .sm\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -28215,6 +29459,66 @@ select {
   .sm\:focus\:placeholder-blue-light:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-page:focus::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:focus\:placeholder-page:focus:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:focus\:placeholder-page:focus::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .sm\:focus\:placeholder-card:focus::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:focus\:placeholder-card:focus:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:focus\:placeholder-card:focus::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .sm\:focus\:placeholder-button:focus::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:focus\:placeholder-button:focus:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:focus\:placeholder-button:focus::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .sm\:focus\:placeholder-header:focus::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:focus\:placeholder-header:focus:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:focus\:placeholder-header:focus::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .sm\:focus\:placeholder-default:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-default:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-default:focus::placeholder {
+    color: var(--text-default-color);
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder {
@@ -31631,6 +32935,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .sm\:ring-offset-page {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .sm\:ring-offset-card {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .sm\:ring-offset-button {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .sm\:ring-offset-header {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .sm\:ring-offset-default {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .sm\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -31691,6 +33015,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .sm\:focus-within\:ring-offset-page:focus-within {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .sm\:focus-within\:ring-offset-card:focus-within {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .sm\:focus-within\:ring-offset-button:focus-within {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .sm\:focus-within\:ring-offset-header:focus-within {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .sm\:focus-within\:ring-offset-default:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .sm\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -31749,6 +33093,26 @@ select {
 
   .sm\:focus\:ring-offset-blue-light:focus {
     --tw-ring-offset-color: #8AE2FE;
+  }
+
+  .sm\:focus\:ring-offset-page:focus {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .sm\:focus\:ring-offset-card:focus {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .sm\:focus\:ring-offset-button:focus {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .sm\:focus\:ring-offset-header:focus {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .sm\:focus\:ring-offset-default:focus {
+    --tw-ring-offset-color: var(--text-default-color);
   }
 
   .sm\:ring-offset-0 {
@@ -31885,6 +33249,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .sm\:ring-page {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .sm\:ring-card {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .sm\:ring-button {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .sm\:ring-header {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .sm\:ring-default {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .sm\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -31959,6 +33343,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .sm\:focus-within\:ring-page:focus-within {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .sm\:focus-within\:ring-card:focus-within {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .sm\:focus-within\:ring-button:focus-within {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .sm\:focus-within\:ring-header:focus-within {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .sm\:focus-within\:ring-default:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .sm\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -32031,6 +33435,26 @@ select {
   .sm\:focus\:ring-blue-light:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus\:ring-page:focus {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .sm\:focus\:ring-card:focus {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .sm\:focus\:ring-button:focus {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .sm\:focus\:ring-header:focus {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .sm\:focus\:ring-default:focus {
+    --tw-ring-color: var(--text-default-color);
   }
 
   .sm\:ring-opacity-0 {
@@ -32331,6 +33755,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .sm\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .sm\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .sm\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .sm\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .sm\:text-default {
+    color: var(--text-default-color);
+  }
+
   .group:hover .sm\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -32403,6 +33847,26 @@ select {
   .group:hover .sm\:group-hover\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-default {
+    color: var(--text-default-color);
   }
 
   .sm\:focus-within\:text-red-50:focus-within {
@@ -32479,6 +33943,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .sm\:focus-within\:text-page:focus-within {
+    color: var(--page-background-color);
+  }
+
+  .sm\:focus-within\:text-card:focus-within {
+    color: var(--card-background-color);
+  }
+
+  .sm\:focus-within\:text-button:focus-within {
+    color: var(--button-background-color);
+  }
+
+  .sm\:focus-within\:text-header:focus-within {
+    color: var(--header-background-color);
+  }
+
+  .sm\:focus-within\:text-default:focus-within {
+    color: var(--text-default-color);
+  }
+
   .sm\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -32553,6 +34037,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .sm\:hover\:text-page:hover {
+    color: var(--page-background-color);
+  }
+
+  .sm\:hover\:text-card:hover {
+    color: var(--card-background-color);
+  }
+
+  .sm\:hover\:text-button:hover {
+    color: var(--button-background-color);
+  }
+
+  .sm\:hover\:text-header:hover {
+    color: var(--header-background-color);
+  }
+
+  .sm\:hover\:text-default:hover {
+    color: var(--text-default-color);
+  }
+
   .sm\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -32625,6 +34129,26 @@ select {
   .sm\:focus\:text-blue-light:focus {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-page:focus {
+    color: var(--page-background-color);
+  }
+
+  .sm\:focus\:text-card:focus {
+    color: var(--card-background-color);
+  }
+
+  .sm\:focus\:text-button:focus {
+    color: var(--button-background-color);
+  }
+
+  .sm\:focus\:text-header:focus {
+    color: var(--header-background-color);
+  }
+
+  .sm\:focus\:text-default:focus {
+    color: var(--text-default-color);
   }
 
   .sm\:text-opacity-0 {
@@ -38506,6 +40030,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
   }
 
+  .md\:divide-page > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--page-background-color);
+  }
+
+  .md\:divide-card > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--card-background-color);
+  }
+
+  .md\:divide-button > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--button-background-color);
+  }
+
+  .md\:divide-header > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--header-background-color);
+  }
+
+  .md\:divide-default > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
   .md\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -38764,6 +40308,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .md\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .md\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .md\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .md\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .md\:bg-default {
+    background-color: var(--text-default-color);
+  }
+
   .group:hover .md\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -38836,6 +40400,26 @@ select {
   .group:hover .md\:group-hover\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .group:hover .md\:group-hover\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-default {
+    background-color: var(--text-default-color);
   }
 
   .md\:focus-within\:bg-red-50:focus-within {
@@ -38912,6 +40496,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .md\:focus-within\:bg-page:focus-within {
+    background-color: var(--page-background-color);
+  }
+
+  .md\:focus-within\:bg-card:focus-within {
+    background-color: var(--card-background-color);
+  }
+
+  .md\:focus-within\:bg-button:focus-within {
+    background-color: var(--button-background-color);
+  }
+
+  .md\:focus-within\:bg-header:focus-within {
+    background-color: var(--header-background-color);
+  }
+
+  .md\:focus-within\:bg-default:focus-within {
+    background-color: var(--text-default-color);
+  }
+
   .md\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -38986,6 +40590,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .md\:hover\:bg-page:hover {
+    background-color: var(--page-background-color);
+  }
+
+  .md\:hover\:bg-card:hover {
+    background-color: var(--card-background-color);
+  }
+
+  .md\:hover\:bg-button:hover {
+    background-color: var(--button-background-color);
+  }
+
+  .md\:hover\:bg-header:hover {
+    background-color: var(--header-background-color);
+  }
+
+  .md\:hover\:bg-default:hover {
+    background-color: var(--text-default-color);
+  }
+
   .md\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -39058,6 +40682,26 @@ select {
   .md\:focus\:bg-blue-light:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:focus\:bg-page:focus {
+    background-color: var(--page-background-color);
+  }
+
+  .md\:focus\:bg-card:focus {
+    background-color: var(--card-background-color);
+  }
+
+  .md\:focus\:bg-button:focus {
+    background-color: var(--button-background-color);
+  }
+
+  .md\:focus\:bg-header:focus {
+    background-color: var(--header-background-color);
+  }
+
+  .md\:focus\:bg-default:focus {
+    background-color: var(--text-default-color);
   }
 
   .md\:bg-none {
@@ -39171,6 +40815,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:from-page {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-card {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-button {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-header {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-default {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -39231,6 +40900,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:via-page {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-card {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-button {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-header {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-default {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -39289,6 +40978,26 @@ select {
 
   .md\:to-blue-light {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .md\:to-page {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .md\:to-card {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .md\:to-button {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .md\:to-header {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .md\:to-default {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .md\:hover\:from-red-50:hover {
@@ -39366,6 +41075,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:hover\:from-page:hover {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-card:hover {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-button:hover {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-header:hover {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-default:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -39426,6 +41160,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:hover\:via-page:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-card:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-button:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-header:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-default:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -39484,6 +41238,26 @@ select {
 
   .md\:hover\:to-blue-light:hover {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .md\:hover\:to-page:hover {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .md\:hover\:to-card:hover {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .md\:hover\:to-button:hover {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .md\:hover\:to-header:hover {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .md\:hover\:to-default:hover {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .md\:focus\:from-red-50:focus {
@@ -39561,6 +41335,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:focus\:from-page:focus {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-card:focus {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-button:focus {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-header:focus {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-default:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -39621,6 +41420,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .md\:focus\:via-page:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-card:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-button:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-header:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-default:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -39679,6 +41498,26 @@ select {
 
   .md\:focus\:to-blue-light:focus {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .md\:focus\:to-page:focus {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .md\:focus\:to-card:focus {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .md\:focus\:to-button:focus {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .md\:focus\:to-header:focus {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .md\:focus\:to-default:focus {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .md\:bg-opacity-0 {
@@ -40135,6 +41974,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .md\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .md\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .md\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .md\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .md\:border-default {
+    border-color: var(--text-default-color);
+  }
+
   .group:hover .md\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -40207,6 +42066,26 @@ select {
   .group:hover .md\:group-hover\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .group:hover .md\:group-hover\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .group:hover .md\:group-hover\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .group:hover .md\:group-hover\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .group:hover .md\:group-hover\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .group:hover .md\:group-hover\:border-default {
+    border-color: var(--text-default-color);
   }
 
   .md\:focus-within\:border-red-50:focus-within {
@@ -40283,6 +42162,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .md\:focus-within\:border-page:focus-within {
+    border-color: var(--page-background-color);
+  }
+
+  .md\:focus-within\:border-card:focus-within {
+    border-color: var(--card-background-color);
+  }
+
+  .md\:focus-within\:border-button:focus-within {
+    border-color: var(--button-background-color);
+  }
+
+  .md\:focus-within\:border-header:focus-within {
+    border-color: var(--header-background-color);
+  }
+
+  .md\:focus-within\:border-default:focus-within {
+    border-color: var(--text-default-color);
+  }
+
   .md\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -40357,6 +42256,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .md\:hover\:border-page:hover {
+    border-color: var(--page-background-color);
+  }
+
+  .md\:hover\:border-card:hover {
+    border-color: var(--card-background-color);
+  }
+
+  .md\:hover\:border-button:hover {
+    border-color: var(--button-background-color);
+  }
+
+  .md\:hover\:border-header:hover {
+    border-color: var(--header-background-color);
+  }
+
+  .md\:hover\:border-default:hover {
+    border-color: var(--text-default-color);
+  }
+
   .md\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -40429,6 +42348,26 @@ select {
   .md\:focus\:border-blue-light:focus {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .md\:focus\:border-page:focus {
+    border-color: var(--page-background-color);
+  }
+
+  .md\:focus\:border-card:focus {
+    border-color: var(--card-background-color);
+  }
+
+  .md\:focus\:border-button:focus {
+    border-color: var(--button-background-color);
+  }
+
+  .md\:focus\:border-header:focus {
+    border-color: var(--header-background-color);
+  }
+
+  .md\:focus\:border-default:focus {
+    border-color: var(--text-default-color);
   }
 
   .md\:border-opacity-0 {
@@ -46308,6 +48247,66 @@ select {
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
   }
 
+  .md\:placeholder-page::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:placeholder-page:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:placeholder-page::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:placeholder-card::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:placeholder-card:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:placeholder-card::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:placeholder-button::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:placeholder-button:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:placeholder-button::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:placeholder-header::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:placeholder-header:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:placeholder-header::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:placeholder-default::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:placeholder-default:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:placeholder-default::placeholder {
+    color: var(--text-default-color);
+  }
+
   .md\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -46528,6 +48527,66 @@ select {
   .md\:focus\:placeholder-blue-light:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-page:focus::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:focus\:placeholder-page:focus:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:focus\:placeholder-page:focus::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .md\:focus\:placeholder-card:focus::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:focus\:placeholder-card:focus:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:focus\:placeholder-card:focus::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .md\:focus\:placeholder-button:focus::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:focus\:placeholder-button:focus:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:focus\:placeholder-button:focus::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .md\:focus\:placeholder-header:focus::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:focus\:placeholder-header:focus:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:focus\:placeholder-header:focus::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .md\:focus\:placeholder-default:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-default:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-default:focus::placeholder {
+    color: var(--text-default-color);
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder {
@@ -49944,6 +52003,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .md\:ring-offset-page {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .md\:ring-offset-card {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .md\:ring-offset-button {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .md\:ring-offset-header {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .md\:ring-offset-default {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .md\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -50004,6 +52083,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .md\:focus-within\:ring-offset-page:focus-within {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .md\:focus-within\:ring-offset-card:focus-within {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .md\:focus-within\:ring-offset-button:focus-within {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .md\:focus-within\:ring-offset-header:focus-within {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .md\:focus-within\:ring-offset-default:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .md\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -50062,6 +52161,26 @@ select {
 
   .md\:focus\:ring-offset-blue-light:focus {
     --tw-ring-offset-color: #8AE2FE;
+  }
+
+  .md\:focus\:ring-offset-page:focus {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .md\:focus\:ring-offset-card:focus {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .md\:focus\:ring-offset-button:focus {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .md\:focus\:ring-offset-header:focus {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .md\:focus\:ring-offset-default:focus {
+    --tw-ring-offset-color: var(--text-default-color);
   }
 
   .md\:ring-offset-0 {
@@ -50198,6 +52317,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .md\:ring-page {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .md\:ring-card {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .md\:ring-button {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .md\:ring-header {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .md\:ring-default {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .md\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -50272,6 +52411,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .md\:focus-within\:ring-page:focus-within {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .md\:focus-within\:ring-card:focus-within {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .md\:focus-within\:ring-button:focus-within {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .md\:focus-within\:ring-header:focus-within {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .md\:focus-within\:ring-default:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .md\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -50344,6 +52503,26 @@ select {
   .md\:focus\:ring-blue-light:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+  }
+
+  .md\:focus\:ring-page:focus {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .md\:focus\:ring-card:focus {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .md\:focus\:ring-button:focus {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .md\:focus\:ring-header:focus {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .md\:focus\:ring-default:focus {
+    --tw-ring-color: var(--text-default-color);
   }
 
   .md\:ring-opacity-0 {
@@ -50644,6 +52823,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .md\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .md\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .md\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .md\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .md\:text-default {
+    color: var(--text-default-color);
+  }
+
   .group:hover .md\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -50716,6 +52915,26 @@ select {
   .group:hover .md\:group-hover\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .group:hover .md\:group-hover\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .group:hover .md\:group-hover\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .group:hover .md\:group-hover\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .group:hover .md\:group-hover\:text-default {
+    color: var(--text-default-color);
   }
 
   .md\:focus-within\:text-red-50:focus-within {
@@ -50792,6 +53011,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .md\:focus-within\:text-page:focus-within {
+    color: var(--page-background-color);
+  }
+
+  .md\:focus-within\:text-card:focus-within {
+    color: var(--card-background-color);
+  }
+
+  .md\:focus-within\:text-button:focus-within {
+    color: var(--button-background-color);
+  }
+
+  .md\:focus-within\:text-header:focus-within {
+    color: var(--header-background-color);
+  }
+
+  .md\:focus-within\:text-default:focus-within {
+    color: var(--text-default-color);
+  }
+
   .md\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -50866,6 +53105,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .md\:hover\:text-page:hover {
+    color: var(--page-background-color);
+  }
+
+  .md\:hover\:text-card:hover {
+    color: var(--card-background-color);
+  }
+
+  .md\:hover\:text-button:hover {
+    color: var(--button-background-color);
+  }
+
+  .md\:hover\:text-header:hover {
+    color: var(--header-background-color);
+  }
+
+  .md\:hover\:text-default:hover {
+    color: var(--text-default-color);
+  }
+
   .md\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -50938,6 +53197,26 @@ select {
   .md\:focus\:text-blue-light:focus {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-page:focus {
+    color: var(--page-background-color);
+  }
+
+  .md\:focus\:text-card:focus {
+    color: var(--card-background-color);
+  }
+
+  .md\:focus\:text-button:focus {
+    color: var(--button-background-color);
+  }
+
+  .md\:focus\:text-header:focus {
+    color: var(--header-background-color);
+  }
+
+  .md\:focus\:text-default:focus {
+    color: var(--text-default-color);
   }
 
   .md\:text-opacity-0 {
@@ -56819,6 +59098,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
   }
 
+  .lg\:divide-page > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--page-background-color);
+  }
+
+  .lg\:divide-card > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--card-background-color);
+  }
+
+  .lg\:divide-button > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--button-background-color);
+  }
+
+  .lg\:divide-header > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--header-background-color);
+  }
+
+  .lg\:divide-default > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
   .lg\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -57077,6 +59376,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .lg\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .lg\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .lg\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .lg\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .lg\:bg-default {
+    background-color: var(--text-default-color);
+  }
+
   .group:hover .lg\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -57149,6 +59468,26 @@ select {
   .group:hover .lg\:group-hover\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-default {
+    background-color: var(--text-default-color);
   }
 
   .lg\:focus-within\:bg-red-50:focus-within {
@@ -57225,6 +59564,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .lg\:focus-within\:bg-page:focus-within {
+    background-color: var(--page-background-color);
+  }
+
+  .lg\:focus-within\:bg-card:focus-within {
+    background-color: var(--card-background-color);
+  }
+
+  .lg\:focus-within\:bg-button:focus-within {
+    background-color: var(--button-background-color);
+  }
+
+  .lg\:focus-within\:bg-header:focus-within {
+    background-color: var(--header-background-color);
+  }
+
+  .lg\:focus-within\:bg-default:focus-within {
+    background-color: var(--text-default-color);
+  }
+
   .lg\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -57299,6 +59658,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .lg\:hover\:bg-page:hover {
+    background-color: var(--page-background-color);
+  }
+
+  .lg\:hover\:bg-card:hover {
+    background-color: var(--card-background-color);
+  }
+
+  .lg\:hover\:bg-button:hover {
+    background-color: var(--button-background-color);
+  }
+
+  .lg\:hover\:bg-header:hover {
+    background-color: var(--header-background-color);
+  }
+
+  .lg\:hover\:bg-default:hover {
+    background-color: var(--text-default-color);
+  }
+
   .lg\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -57371,6 +59750,26 @@ select {
   .lg\:focus\:bg-blue-light:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus\:bg-page:focus {
+    background-color: var(--page-background-color);
+  }
+
+  .lg\:focus\:bg-card:focus {
+    background-color: var(--card-background-color);
+  }
+
+  .lg\:focus\:bg-button:focus {
+    background-color: var(--button-background-color);
+  }
+
+  .lg\:focus\:bg-header:focus {
+    background-color: var(--header-background-color);
+  }
+
+  .lg\:focus\:bg-default:focus {
+    background-color: var(--text-default-color);
   }
 
   .lg\:bg-none {
@@ -57484,6 +59883,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:from-page {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-card {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-button {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-header {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-default {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -57544,6 +59968,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:via-page {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-card {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-button {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-header {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-default {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -57602,6 +60046,26 @@ select {
 
   .lg\:to-blue-light {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .lg\:to-page {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .lg\:to-card {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .lg\:to-button {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .lg\:to-header {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .lg\:to-default {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .lg\:hover\:from-red-50:hover {
@@ -57679,6 +60143,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:hover\:from-page:hover {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-card:hover {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-button:hover {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-header:hover {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-default:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -57739,6 +60228,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:hover\:via-page:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-card:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-button:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-header:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-default:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -57797,6 +60306,26 @@ select {
 
   .lg\:hover\:to-blue-light:hover {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .lg\:hover\:to-page:hover {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .lg\:hover\:to-card:hover {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .lg\:hover\:to-button:hover {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .lg\:hover\:to-header:hover {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .lg\:hover\:to-default:hover {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .lg\:focus\:from-red-50:focus {
@@ -57874,6 +60403,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:focus\:from-page:focus {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-card:focus {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-button:focus {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-header:focus {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-default:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -57934,6 +60488,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .lg\:focus\:via-page:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-card:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-button:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-header:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-default:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -57992,6 +60566,26 @@ select {
 
   .lg\:focus\:to-blue-light:focus {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .lg\:focus\:to-page:focus {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .lg\:focus\:to-card:focus {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .lg\:focus\:to-button:focus {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .lg\:focus\:to-header:focus {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .lg\:focus\:to-default:focus {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .lg\:bg-opacity-0 {
@@ -58448,6 +61042,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .lg\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .lg\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .lg\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .lg\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .lg\:border-default {
+    border-color: var(--text-default-color);
+  }
+
   .group:hover .lg\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -58520,6 +61134,26 @@ select {
   .group:hover .lg\:group-hover\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-default {
+    border-color: var(--text-default-color);
   }
 
   .lg\:focus-within\:border-red-50:focus-within {
@@ -58596,6 +61230,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .lg\:focus-within\:border-page:focus-within {
+    border-color: var(--page-background-color);
+  }
+
+  .lg\:focus-within\:border-card:focus-within {
+    border-color: var(--card-background-color);
+  }
+
+  .lg\:focus-within\:border-button:focus-within {
+    border-color: var(--button-background-color);
+  }
+
+  .lg\:focus-within\:border-header:focus-within {
+    border-color: var(--header-background-color);
+  }
+
+  .lg\:focus-within\:border-default:focus-within {
+    border-color: var(--text-default-color);
+  }
+
   .lg\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -58670,6 +61324,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .lg\:hover\:border-page:hover {
+    border-color: var(--page-background-color);
+  }
+
+  .lg\:hover\:border-card:hover {
+    border-color: var(--card-background-color);
+  }
+
+  .lg\:hover\:border-button:hover {
+    border-color: var(--button-background-color);
+  }
+
+  .lg\:hover\:border-header:hover {
+    border-color: var(--header-background-color);
+  }
+
+  .lg\:hover\:border-default:hover {
+    border-color: var(--text-default-color);
+  }
+
   .lg\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -58742,6 +61416,26 @@ select {
   .lg\:focus\:border-blue-light:focus {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .lg\:focus\:border-page:focus {
+    border-color: var(--page-background-color);
+  }
+
+  .lg\:focus\:border-card:focus {
+    border-color: var(--card-background-color);
+  }
+
+  .lg\:focus\:border-button:focus {
+    border-color: var(--button-background-color);
+  }
+
+  .lg\:focus\:border-header:focus {
+    border-color: var(--header-background-color);
+  }
+
+  .lg\:focus\:border-default:focus {
+    border-color: var(--text-default-color);
   }
 
   .lg\:border-opacity-0 {
@@ -64621,6 +67315,66 @@ select {
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
   }
 
+  .lg\:placeholder-page::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:placeholder-page:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:placeholder-page::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:placeholder-card::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:placeholder-card:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:placeholder-card::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:placeholder-button::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:placeholder-button:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:placeholder-button::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:placeholder-header::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:placeholder-header:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:placeholder-header::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:placeholder-default::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:placeholder-default:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:placeholder-default::placeholder {
+    color: var(--text-default-color);
+  }
+
   .lg\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -64841,6 +67595,66 @@ select {
   .lg\:focus\:placeholder-blue-light:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-page:focus::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:focus\:placeholder-page:focus:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:focus\:placeholder-page:focus::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .lg\:focus\:placeholder-card:focus::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:focus\:placeholder-card:focus:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:focus\:placeholder-card:focus::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .lg\:focus\:placeholder-button:focus::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:focus\:placeholder-button:focus:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:focus\:placeholder-button:focus::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .lg\:focus\:placeholder-header:focus::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:focus\:placeholder-header:focus:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:focus\:placeholder-header:focus::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .lg\:focus\:placeholder-default:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-default:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-default:focus::placeholder {
+    color: var(--text-default-color);
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder {
@@ -68257,6 +71071,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .lg\:ring-offset-page {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .lg\:ring-offset-card {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .lg\:ring-offset-button {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .lg\:ring-offset-header {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .lg\:ring-offset-default {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .lg\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -68317,6 +71151,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .lg\:focus-within\:ring-offset-page:focus-within {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .lg\:focus-within\:ring-offset-card:focus-within {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .lg\:focus-within\:ring-offset-button:focus-within {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .lg\:focus-within\:ring-offset-header:focus-within {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .lg\:focus-within\:ring-offset-default:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .lg\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -68375,6 +71229,26 @@ select {
 
   .lg\:focus\:ring-offset-blue-light:focus {
     --tw-ring-offset-color: #8AE2FE;
+  }
+
+  .lg\:focus\:ring-offset-page:focus {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .lg\:focus\:ring-offset-card:focus {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .lg\:focus\:ring-offset-button:focus {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .lg\:focus\:ring-offset-header:focus {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .lg\:focus\:ring-offset-default:focus {
+    --tw-ring-offset-color: var(--text-default-color);
   }
 
   .lg\:ring-offset-0 {
@@ -68511,6 +71385,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .lg\:ring-page {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .lg\:ring-card {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .lg\:ring-button {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .lg\:ring-header {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .lg\:ring-default {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .lg\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -68585,6 +71479,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .lg\:focus-within\:ring-page:focus-within {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .lg\:focus-within\:ring-card:focus-within {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .lg\:focus-within\:ring-button:focus-within {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .lg\:focus-within\:ring-header:focus-within {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .lg\:focus-within\:ring-default:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .lg\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -68657,6 +71571,26 @@ select {
   .lg\:focus\:ring-blue-light:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus\:ring-page:focus {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .lg\:focus\:ring-card:focus {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .lg\:focus\:ring-button:focus {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .lg\:focus\:ring-header:focus {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .lg\:focus\:ring-default:focus {
+    --tw-ring-color: var(--text-default-color);
   }
 
   .lg\:ring-opacity-0 {
@@ -68957,6 +71891,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .lg\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .lg\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .lg\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .lg\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .lg\:text-default {
+    color: var(--text-default-color);
+  }
+
   .group:hover .lg\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -69029,6 +71983,26 @@ select {
   .group:hover .lg\:group-hover\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-default {
+    color: var(--text-default-color);
   }
 
   .lg\:focus-within\:text-red-50:focus-within {
@@ -69105,6 +72079,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .lg\:focus-within\:text-page:focus-within {
+    color: var(--page-background-color);
+  }
+
+  .lg\:focus-within\:text-card:focus-within {
+    color: var(--card-background-color);
+  }
+
+  .lg\:focus-within\:text-button:focus-within {
+    color: var(--button-background-color);
+  }
+
+  .lg\:focus-within\:text-header:focus-within {
+    color: var(--header-background-color);
+  }
+
+  .lg\:focus-within\:text-default:focus-within {
+    color: var(--text-default-color);
+  }
+
   .lg\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -69179,6 +72173,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .lg\:hover\:text-page:hover {
+    color: var(--page-background-color);
+  }
+
+  .lg\:hover\:text-card:hover {
+    color: var(--card-background-color);
+  }
+
+  .lg\:hover\:text-button:hover {
+    color: var(--button-background-color);
+  }
+
+  .lg\:hover\:text-header:hover {
+    color: var(--header-background-color);
+  }
+
+  .lg\:hover\:text-default:hover {
+    color: var(--text-default-color);
+  }
+
   .lg\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -69251,6 +72265,26 @@ select {
   .lg\:focus\:text-blue-light:focus {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-page:focus {
+    color: var(--page-background-color);
+  }
+
+  .lg\:focus\:text-card:focus {
+    color: var(--card-background-color);
+  }
+
+  .lg\:focus\:text-button:focus {
+    color: var(--button-background-color);
+  }
+
+  .lg\:focus\:text-header:focus {
+    color: var(--header-background-color);
+  }
+
+  .lg\:focus\:text-default:focus {
+    color: var(--text-default-color);
   }
 
   .lg\:text-opacity-0 {
@@ -75132,6 +78166,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
   }
 
+  .xl\:divide-page > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--page-background-color);
+  }
+
+  .xl\:divide-card > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--card-background-color);
+  }
+
+  .xl\:divide-button > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--button-background-color);
+  }
+
+  .xl\:divide-header > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--header-background-color);
+  }
+
+  .xl\:divide-default > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
   .xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -75390,6 +78444,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .xl\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .xl\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .xl\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .xl\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .xl\:bg-default {
+    background-color: var(--text-default-color);
+  }
+
   .group:hover .xl\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -75462,6 +78536,26 @@ select {
   .group:hover .xl\:group-hover\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-default {
+    background-color: var(--text-default-color);
   }
 
   .xl\:focus-within\:bg-red-50:focus-within {
@@ -75538,6 +78632,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .xl\:focus-within\:bg-page:focus-within {
+    background-color: var(--page-background-color);
+  }
+
+  .xl\:focus-within\:bg-card:focus-within {
+    background-color: var(--card-background-color);
+  }
+
+  .xl\:focus-within\:bg-button:focus-within {
+    background-color: var(--button-background-color);
+  }
+
+  .xl\:focus-within\:bg-header:focus-within {
+    background-color: var(--header-background-color);
+  }
+
+  .xl\:focus-within\:bg-default:focus-within {
+    background-color: var(--text-default-color);
+  }
+
   .xl\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -75612,6 +78726,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .xl\:hover\:bg-page:hover {
+    background-color: var(--page-background-color);
+  }
+
+  .xl\:hover\:bg-card:hover {
+    background-color: var(--card-background-color);
+  }
+
+  .xl\:hover\:bg-button:hover {
+    background-color: var(--button-background-color);
+  }
+
+  .xl\:hover\:bg-header:hover {
+    background-color: var(--header-background-color);
+  }
+
+  .xl\:hover\:bg-default:hover {
+    background-color: var(--text-default-color);
+  }
+
   .xl\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -75684,6 +78818,26 @@ select {
   .xl\:focus\:bg-blue-light:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus\:bg-page:focus {
+    background-color: var(--page-background-color);
+  }
+
+  .xl\:focus\:bg-card:focus {
+    background-color: var(--card-background-color);
+  }
+
+  .xl\:focus\:bg-button:focus {
+    background-color: var(--button-background-color);
+  }
+
+  .xl\:focus\:bg-header:focus {
+    background-color: var(--header-background-color);
+  }
+
+  .xl\:focus\:bg-default:focus {
+    background-color: var(--text-default-color);
   }
 
   .xl\:bg-none {
@@ -75797,6 +78951,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:from-page {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-card {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-button {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-header {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-default {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -75857,6 +79036,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:via-page {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-card {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-button {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-header {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-default {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -75915,6 +79114,26 @@ select {
 
   .xl\:to-blue-light {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .xl\:to-page {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .xl\:to-card {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .xl\:to-button {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .xl\:to-header {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .xl\:to-default {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .xl\:hover\:from-red-50:hover {
@@ -75992,6 +79211,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:hover\:from-page:hover {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-card:hover {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-button:hover {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-header:hover {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-default:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -76052,6 +79296,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:hover\:via-page:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-card:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-button:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-header:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-default:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -76110,6 +79374,26 @@ select {
 
   .xl\:hover\:to-blue-light:hover {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .xl\:hover\:to-page:hover {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .xl\:hover\:to-card:hover {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .xl\:hover\:to-button:hover {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .xl\:hover\:to-header:hover {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .xl\:hover\:to-default:hover {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .xl\:focus\:from-red-50:focus {
@@ -76187,6 +79471,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:focus\:from-page:focus {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-card:focus {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-button:focus {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-header:focus {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-default:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -76247,6 +79556,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .xl\:focus\:via-page:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-card:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-button:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-header:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-default:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -76305,6 +79634,26 @@ select {
 
   .xl\:focus\:to-blue-light:focus {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .xl\:focus\:to-page:focus {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .xl\:focus\:to-card:focus {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .xl\:focus\:to-button:focus {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .xl\:focus\:to-header:focus {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .xl\:focus\:to-default:focus {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .xl\:bg-opacity-0 {
@@ -76761,6 +80110,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .xl\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .xl\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .xl\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .xl\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .xl\:border-default {
+    border-color: var(--text-default-color);
+  }
+
   .group:hover .xl\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -76833,6 +80202,26 @@ select {
   .group:hover .xl\:group-hover\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-default {
+    border-color: var(--text-default-color);
   }
 
   .xl\:focus-within\:border-red-50:focus-within {
@@ -76909,6 +80298,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .xl\:focus-within\:border-page:focus-within {
+    border-color: var(--page-background-color);
+  }
+
+  .xl\:focus-within\:border-card:focus-within {
+    border-color: var(--card-background-color);
+  }
+
+  .xl\:focus-within\:border-button:focus-within {
+    border-color: var(--button-background-color);
+  }
+
+  .xl\:focus-within\:border-header:focus-within {
+    border-color: var(--header-background-color);
+  }
+
+  .xl\:focus-within\:border-default:focus-within {
+    border-color: var(--text-default-color);
+  }
+
   .xl\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -76983,6 +80392,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .xl\:hover\:border-page:hover {
+    border-color: var(--page-background-color);
+  }
+
+  .xl\:hover\:border-card:hover {
+    border-color: var(--card-background-color);
+  }
+
+  .xl\:hover\:border-button:hover {
+    border-color: var(--button-background-color);
+  }
+
+  .xl\:hover\:border-header:hover {
+    border-color: var(--header-background-color);
+  }
+
+  .xl\:hover\:border-default:hover {
+    border-color: var(--text-default-color);
+  }
+
   .xl\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -77055,6 +80484,26 @@ select {
   .xl\:focus\:border-blue-light:focus {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .xl\:focus\:border-page:focus {
+    border-color: var(--page-background-color);
+  }
+
+  .xl\:focus\:border-card:focus {
+    border-color: var(--card-background-color);
+  }
+
+  .xl\:focus\:border-button:focus {
+    border-color: var(--button-background-color);
+  }
+
+  .xl\:focus\:border-header:focus {
+    border-color: var(--header-background-color);
+  }
+
+  .xl\:focus\:border-default:focus {
+    border-color: var(--text-default-color);
   }
 
   .xl\:border-opacity-0 {
@@ -82934,6 +86383,66 @@ select {
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
   }
 
+  .xl\:placeholder-page::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:placeholder-page:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:placeholder-page::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:placeholder-card::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:placeholder-card:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:placeholder-card::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:placeholder-button::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:placeholder-button:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:placeholder-button::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:placeholder-header::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:placeholder-header:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:placeholder-header::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:placeholder-default::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:placeholder-default:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:placeholder-default::placeholder {
+    color: var(--text-default-color);
+  }
+
   .xl\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -83154,6 +86663,66 @@ select {
   .xl\:focus\:placeholder-blue-light:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-page:focus::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:focus\:placeholder-page:focus:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:focus\:placeholder-page:focus::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .xl\:focus\:placeholder-card:focus::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:focus\:placeholder-card:focus:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:focus\:placeholder-card:focus::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .xl\:focus\:placeholder-button:focus::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:focus\:placeholder-button:focus:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:focus\:placeholder-button:focus::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .xl\:focus\:placeholder-header:focus::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:focus\:placeholder-header:focus:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:focus\:placeholder-header:focus::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .xl\:focus\:placeholder-default:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-default:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-default:focus::placeholder {
+    color: var(--text-default-color);
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder {
@@ -86570,6 +90139,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .xl\:ring-offset-page {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .xl\:ring-offset-card {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .xl\:ring-offset-button {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .xl\:ring-offset-header {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .xl\:ring-offset-default {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .xl\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -86630,6 +90219,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .xl\:focus-within\:ring-offset-page:focus-within {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .xl\:focus-within\:ring-offset-card:focus-within {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .xl\:focus-within\:ring-offset-button:focus-within {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .xl\:focus-within\:ring-offset-header:focus-within {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .xl\:focus-within\:ring-offset-default:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .xl\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -86688,6 +90297,26 @@ select {
 
   .xl\:focus\:ring-offset-blue-light:focus {
     --tw-ring-offset-color: #8AE2FE;
+  }
+
+  .xl\:focus\:ring-offset-page:focus {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .xl\:focus\:ring-offset-card:focus {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .xl\:focus\:ring-offset-button:focus {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .xl\:focus\:ring-offset-header:focus {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .xl\:focus\:ring-offset-default:focus {
+    --tw-ring-offset-color: var(--text-default-color);
   }
 
   .xl\:ring-offset-0 {
@@ -86824,6 +90453,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .xl\:ring-page {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .xl\:ring-card {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .xl\:ring-button {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .xl\:ring-header {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .xl\:ring-default {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .xl\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -86898,6 +90547,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .xl\:focus-within\:ring-page:focus-within {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .xl\:focus-within\:ring-card:focus-within {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .xl\:focus-within\:ring-button:focus-within {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .xl\:focus-within\:ring-header:focus-within {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .xl\:focus-within\:ring-default:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .xl\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -86970,6 +90639,26 @@ select {
   .xl\:focus\:ring-blue-light:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus\:ring-page:focus {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .xl\:focus\:ring-card:focus {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .xl\:focus\:ring-button:focus {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .xl\:focus\:ring-header:focus {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .xl\:focus\:ring-default:focus {
+    --tw-ring-color: var(--text-default-color);
   }
 
   .xl\:ring-opacity-0 {
@@ -87270,6 +90959,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .xl\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .xl\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .xl\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .xl\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .xl\:text-default {
+    color: var(--text-default-color);
+  }
+
   .group:hover .xl\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -87342,6 +91051,26 @@ select {
   .group:hover .xl\:group-hover\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-default {
+    color: var(--text-default-color);
   }
 
   .xl\:focus-within\:text-red-50:focus-within {
@@ -87418,6 +91147,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .xl\:focus-within\:text-page:focus-within {
+    color: var(--page-background-color);
+  }
+
+  .xl\:focus-within\:text-card:focus-within {
+    color: var(--card-background-color);
+  }
+
+  .xl\:focus-within\:text-button:focus-within {
+    color: var(--button-background-color);
+  }
+
+  .xl\:focus-within\:text-header:focus-within {
+    color: var(--header-background-color);
+  }
+
+  .xl\:focus-within\:text-default:focus-within {
+    color: var(--text-default-color);
+  }
+
   .xl\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -87492,6 +91241,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .xl\:hover\:text-page:hover {
+    color: var(--page-background-color);
+  }
+
+  .xl\:hover\:text-card:hover {
+    color: var(--card-background-color);
+  }
+
+  .xl\:hover\:text-button:hover {
+    color: var(--button-background-color);
+  }
+
+  .xl\:hover\:text-header:hover {
+    color: var(--header-background-color);
+  }
+
+  .xl\:hover\:text-default:hover {
+    color: var(--text-default-color);
+  }
+
   .xl\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -87564,6 +91333,26 @@ select {
   .xl\:focus\:text-blue-light:focus {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-page:focus {
+    color: var(--page-background-color);
+  }
+
+  .xl\:focus\:text-card:focus {
+    color: var(--card-background-color);
+  }
+
+  .xl\:focus\:text-button:focus {
+    color: var(--button-background-color);
+  }
+
+  .xl\:focus\:text-header:focus {
+    color: var(--header-background-color);
+  }
+
+  .xl\:focus\:text-default:focus {
+    color: var(--text-default-color);
   }
 
   .xl\:text-opacity-0 {
@@ -93445,6 +97234,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-divide-opacity));
   }
 
+  .\32xl\:divide-page > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--page-background-color);
+  }
+
+  .\32xl\:divide-card > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--card-background-color);
+  }
+
+  .\32xl\:divide-button > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--button-background-color);
+  }
+
+  .\32xl\:divide-header > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--header-background-color);
+  }
+
+  .\32xl\:divide-default > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
   .\32xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -93703,6 +97512,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .\32xl\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .\32xl\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .\32xl\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .\32xl\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .\32xl\:bg-default {
+    background-color: var(--text-default-color);
+  }
+
   .group:hover .\32xl\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -93775,6 +97604,26 @@ select {
   .group:hover .\32xl\:group-hover\:bg-blue-light {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-page {
+    background-color: var(--page-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-card {
+    background-color: var(--card-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-button {
+    background-color: var(--button-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-header {
+    background-color: var(--header-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-default {
+    background-color: var(--text-default-color);
   }
 
   .\32xl\:focus-within\:bg-red-50:focus-within {
@@ -93851,6 +97700,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .\32xl\:focus-within\:bg-page:focus-within {
+    background-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus-within\:bg-card:focus-within {
+    background-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus-within\:bg-button:focus-within {
+    background-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus-within\:bg-header:focus-within {
+    background-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus-within\:bg-default:focus-within {
+    background-color: var(--text-default-color);
+  }
+
   .\32xl\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -93925,6 +97794,26 @@ select {
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
   }
 
+  .\32xl\:hover\:bg-page:hover {
+    background-color: var(--page-background-color);
+  }
+
+  .\32xl\:hover\:bg-card:hover {
+    background-color: var(--card-background-color);
+  }
+
+  .\32xl\:hover\:bg-button:hover {
+    background-color: var(--button-background-color);
+  }
+
+  .\32xl\:hover\:bg-header:hover {
+    background-color: var(--header-background-color);
+  }
+
+  .\32xl\:hover\:bg-default:hover {
+    background-color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -93997,6 +97886,26 @@ select {
   .\32xl\:focus\:bg-blue-light:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(138, 226, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus\:bg-page:focus {
+    background-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:bg-card:focus {
+    background-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:bg-button:focus {
+    background-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:bg-header:focus {
+    background-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:bg-default:focus {
+    background-color: var(--text-default-color);
   }
 
   .\32xl\:bg-none {
@@ -94110,6 +98019,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:from-page {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-card {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-button {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-header {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-default {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -94170,6 +98104,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:via-page {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-card {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-button {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-header {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-default {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -94228,6 +98182,26 @@ select {
 
   .\32xl\:to-blue-light {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .\32xl\:to-page {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .\32xl\:to-card {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .\32xl\:to-button {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .\32xl\:to-header {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .\32xl\:to-default {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .\32xl\:hover\:from-red-50:hover {
@@ -94305,6 +98279,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:hover\:from-page:hover {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-card:hover {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-button:hover {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-header:hover {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-default:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -94365,6 +98364,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:hover\:via-page:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-card:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-button:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-header:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-default:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -94423,6 +98442,26 @@ select {
 
   .\32xl\:hover\:to-blue-light:hover {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .\32xl\:hover\:to-page:hover {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .\32xl\:hover\:to-card:hover {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .\32xl\:hover\:to-button:hover {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .\32xl\:hover\:to-header:hover {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .\32xl\:hover\:to-default:hover {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .\32xl\:focus\:from-red-50:focus {
@@ -94500,6 +98539,31 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:focus\:from-page:focus {
+    --tw-gradient-from: var(--page-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-card:focus {
+    --tw-gradient-from: var(--card-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-button:focus {
+    --tw-gradient-from: var(--button-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-header:focus {
+    --tw-gradient-from: var(--header-background-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-default:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -94560,6 +98624,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #8AE2FE, var(--tw-gradient-to, rgba(138, 226, 254, 0));
   }
 
+  .\32xl\:focus\:via-page:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--page-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-card:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--card-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-button:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--button-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-header:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--header-background-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-default:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -94618,6 +98702,26 @@ select {
 
   .\32xl\:focus\:to-blue-light:focus {
     --tw-gradient-to: #8AE2FE;
+  }
+
+  .\32xl\:focus\:to-page:focus {
+    --tw-gradient-to: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:to-card:focus {
+    --tw-gradient-to: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:to-button:focus {
+    --tw-gradient-to: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:to-header:focus {
+    --tw-gradient-to: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:to-default:focus {
+    --tw-gradient-to: var(--text-default-color);
   }
 
   .\32xl\:bg-opacity-0 {
@@ -95074,6 +99178,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .\32xl\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .\32xl\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .\32xl\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .\32xl\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .\32xl\:border-default {
+    border-color: var(--text-default-color);
+  }
+
   .group:hover .\32xl\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -95146,6 +99270,26 @@ select {
   .group:hover .\32xl\:group-hover\:border-blue-light {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:border-page {
+    border-color: var(--page-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-card {
+    border-color: var(--card-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-button {
+    border-color: var(--button-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-header {
+    border-color: var(--header-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-default {
+    border-color: var(--text-default-color);
   }
 
   .\32xl\:focus-within\:border-red-50:focus-within {
@@ -95222,6 +99366,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .\32xl\:focus-within\:border-page:focus-within {
+    border-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus-within\:border-card:focus-within {
+    border-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus-within\:border-button:focus-within {
+    border-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus-within\:border-header:focus-within {
+    border-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus-within\:border-default:focus-within {
+    border-color: var(--text-default-color);
+  }
+
   .\32xl\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -95296,6 +99460,26 @@ select {
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
   }
 
+  .\32xl\:hover\:border-page:hover {
+    border-color: var(--page-background-color);
+  }
+
+  .\32xl\:hover\:border-card:hover {
+    border-color: var(--card-background-color);
+  }
+
+  .\32xl\:hover\:border-button:hover {
+    border-color: var(--button-background-color);
+  }
+
+  .\32xl\:hover\:border-header:hover {
+    border-color: var(--header-background-color);
+  }
+
+  .\32xl\:hover\:border-default:hover {
+    border-color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -95368,6 +99552,26 @@ select {
   .\32xl\:focus\:border-blue-light:focus {
     --tw-border-opacity: 1;
     border-color: rgba(138, 226, 254, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus\:border-page:focus {
+    border-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:border-card:focus {
+    border-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:border-button:focus {
+    border-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:border-header:focus {
+    border-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:border-default:focus {
+    border-color: var(--text-default-color);
   }
 
   .\32xl\:border-opacity-0 {
@@ -101247,6 +105451,66 @@ select {
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
   }
 
+  .\32xl\:placeholder-page::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:placeholder-page:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:placeholder-page::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:placeholder-card::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:placeholder-card:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:placeholder-card::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:placeholder-button::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:placeholder-button:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:placeholder-button::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:placeholder-header::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:placeholder-header:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:placeholder-header::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:placeholder-default::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:placeholder-default:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:placeholder-default::placeholder {
+    color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -101467,6 +105731,66 @@ select {
   .\32xl\:focus\:placeholder-blue-light:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-page:focus::-moz-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-page:focus:-ms-input-placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-page:focus::placeholder {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-card:focus::-moz-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-card:focus:-ms-input-placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-card:focus::placeholder {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-button:focus::-moz-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-button:focus:-ms-input-placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-button:focus::placeholder {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-header:focus::-moz-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-header:focus:-ms-input-placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-header:focus::placeholder {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:placeholder-default:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-default:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-default:focus::placeholder {
+    color: var(--text-default-color);
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder {
@@ -104883,6 +109207,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .\32xl\:ring-offset-page {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .\32xl\:ring-offset-card {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .\32xl\:ring-offset-button {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .\32xl\:ring-offset-header {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .\32xl\:ring-offset-default {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .\32xl\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -104943,6 +109287,26 @@ select {
     --tw-ring-offset-color: #8AE2FE;
   }
 
+  .\32xl\:focus-within\:ring-offset-page:focus-within {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-card:focus-within {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-button:focus-within {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-header:focus-within {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-default:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -105001,6 +109365,26 @@ select {
 
   .\32xl\:focus\:ring-offset-blue-light:focus {
     --tw-ring-offset-color: #8AE2FE;
+  }
+
+  .\32xl\:focus\:ring-offset-page:focus {
+    --tw-ring-offset-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:ring-offset-card:focus {
+    --tw-ring-offset-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:ring-offset-button:focus {
+    --tw-ring-offset-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:ring-offset-header:focus {
+    --tw-ring-offset-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:ring-offset-default:focus {
+    --tw-ring-offset-color: var(--text-default-color);
   }
 
   .\32xl\:ring-offset-0 {
@@ -105137,6 +109521,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .\32xl\:ring-page {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .\32xl\:ring-card {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .\32xl\:ring-button {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .\32xl\:ring-header {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .\32xl\:ring-default {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .\32xl\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -105211,6 +109615,26 @@ select {
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
   }
 
+  .\32xl\:focus-within\:ring-page:focus-within {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-card:focus-within {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-button:focus-within {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-header:focus-within {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus-within\:ring-default:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -105283,6 +109707,26 @@ select {
   .\32xl\:focus\:ring-blue-light:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(138, 226, 254, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus\:ring-page:focus {
+    --tw-ring-color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:ring-card:focus {
+    --tw-ring-color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:ring-button:focus {
+    --tw-ring-color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:ring-header:focus {
+    --tw-ring-color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:ring-default:focus {
+    --tw-ring-color: var(--text-default-color);
   }
 
   .\32xl\:ring-opacity-0 {
@@ -105583,6 +110027,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .\32xl\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:text-default {
+    color: var(--text-default-color);
+  }
+
   .group:hover .\32xl\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -105655,6 +110119,26 @@ select {
   .group:hover .\32xl\:group-hover\:text-blue-light {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-page {
+    color: var(--page-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-card {
+    color: var(--card-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-button {
+    color: var(--button-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-header {
+    color: var(--header-background-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-default {
+    color: var(--text-default-color);
   }
 
   .\32xl\:focus-within\:text-red-50:focus-within {
@@ -105731,6 +110215,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus-within\:text-page:focus-within {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:focus-within\:text-card:focus-within {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:focus-within\:text-button:focus-within {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:focus-within\:text-header:focus-within {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:focus-within\:text-default:focus-within {
+    color: var(--text-default-color);
+  }
+
   .\32xl\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -105805,6 +110309,26 @@ select {
     color: rgba(138, 226, 254, var(--tw-text-opacity));
   }
 
+  .\32xl\:hover\:text-page:hover {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:hover\:text-card:hover {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:hover\:text-button:hover {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:hover\:text-header:hover {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:hover\:text-default:hover {
+    color: var(--text-default-color);
+  }
+
   .\32xl\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -105877,6 +110401,26 @@ select {
   .\32xl\:focus\:text-blue-light:focus {
     --tw-text-opacity: 1;
     color: rgba(138, 226, 254, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-page:focus {
+    color: var(--page-background-color);
+  }
+
+  .\32xl\:focus\:text-card:focus {
+    color: var(--card-background-color);
+  }
+
+  .\32xl\:focus\:text-button:focus {
+    color: var(--button-background-color);
+  }
+
+  .\32xl\:focus\:text-header:focus {
+    color: var(--header-background-color);
+  }
+
+  .\32xl\:focus\:text-default:focus {
+    color: var(--text-default-color);
   }
 
   .\32xl\:text-opacity-0 {
