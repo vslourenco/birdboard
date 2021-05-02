@@ -17,7 +17,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased theme-light bg-page text-default">
+    <body class="antialiased theme-dark bg-page text-default">
         <div class="bg-gray-100">
             <nav class="bg-header">
                 <div class="container mx-auto">

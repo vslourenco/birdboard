@@ -1,0 +1,13 @@
+.theme-light {
+    --page-background-color: #F5F6F9;
+    --card-background-color: #FFF;
+    --button-background-color: #47CDFF;
+    --header-background-color: #FFF;
+
+    --text-default-color: #222;
+    --text-accent-color: #47CDFF;
+    --text-accent-light-color: #8AE2FE;
+    --text-muted-color: rgba(0, 0, 0, 0.3);
+    --text-muted-light-color: rgba(255, 255, 255, 0.1);
+    --text-muted-light-color: #E1E6E8;
+}

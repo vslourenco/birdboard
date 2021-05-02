@@ -1792,6 +1792,22 @@ select {
   border-color: var(--text-default-color);
 }
 
+.divide-accent > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--text-default-color);
+}
+
+.divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--text-accent-light-color);
+}
+
+.divide-muted > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--text-muted-color);
+}
+
+.divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--text-muted-light-color);
+}
+
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
   border-style: solid;
 }
@@ -2070,6 +2086,22 @@ select {
   background-color: var(--text-default-color);
 }
 
+.bg-accent {
+  background-color: var(--text-default-color);
+}
+
+.bg-accent-light {
+  background-color: var(--text-accent-light-color);
+}
+
+.bg-muted {
+  background-color: var(--text-muted-color);
+}
+
+.bg-muted-light {
+  background-color: var(--text-muted-light-color);
+}
+
 .group:hover .group-hover\:bg-red-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2162,6 +2194,22 @@ select {
 
 .group:hover .group-hover\:bg-default {
   background-color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:bg-accent {
+  background-color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:bg-accent-light {
+  background-color: var(--text-accent-light-color);
+}
+
+.group:hover .group-hover\:bg-muted {
+  background-color: var(--text-muted-color);
+}
+
+.group:hover .group-hover\:bg-muted-light {
+  background-color: var(--text-muted-light-color);
 }
 
 .focus-within\:bg-red-50:focus-within {
@@ -2258,6 +2306,22 @@ select {
   background-color: var(--text-default-color);
 }
 
+.focus-within\:bg-accent:focus-within {
+  background-color: var(--text-default-color);
+}
+
+.focus-within\:bg-accent-light:focus-within {
+  background-color: var(--text-accent-light-color);
+}
+
+.focus-within\:bg-muted:focus-within {
+  background-color: var(--text-muted-color);
+}
+
+.focus-within\:bg-muted-light:focus-within {
+  background-color: var(--text-muted-light-color);
+}
+
 .hover\:bg-red-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2352,6 +2416,22 @@ select {
   background-color: var(--text-default-color);
 }
 
+.hover\:bg-accent:hover {
+  background-color: var(--text-default-color);
+}
+
+.hover\:bg-accent-light:hover {
+  background-color: var(--text-accent-light-color);
+}
+
+.hover\:bg-muted:hover {
+  background-color: var(--text-muted-color);
+}
+
+.hover\:bg-muted-light:hover {
+  background-color: var(--text-muted-light-color);
+}
+
 .focus\:bg-red-50:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -2444,6 +2524,22 @@ select {
 
 .focus\:bg-default:focus {
   background-color: var(--text-default-color);
+}
+
+.focus\:bg-accent:focus {
+  background-color: var(--text-default-color);
+}
+
+.focus\:bg-accent-light:focus {
+  background-color: var(--text-accent-light-color);
+}
+
+.focus\:bg-muted:focus {
+  background-color: var(--text-muted-color);
+}
+
+.focus\:bg-muted-light:focus {
+  background-color: var(--text-muted-light-color);
 }
 
 .bg-none {
@@ -2582,6 +2678,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.from-accent {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-accent-light {
+  --tw-gradient-from: var(--text-accent-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-muted {
+  --tw-gradient-from: var(--text-muted-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-muted-light {
+  --tw-gradient-from: var(--text-muted-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .via-red-50 {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -2662,6 +2778,22 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.via-accent {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-accent-light {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-muted {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-muted-light {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .to-red-50 {
   --tw-gradient-to: #fef2f2;
 }
@@ -2740,6 +2872,22 @@ select {
 
 .to-default {
   --tw-gradient-to: var(--text-default-color);
+}
+
+.to-accent {
+  --tw-gradient-to: var(--text-default-color);
+}
+
+.to-accent-light {
+  --tw-gradient-to: var(--text-accent-light-color);
+}
+
+.to-muted {
+  --tw-gradient-to: var(--text-muted-color);
+}
+
+.to-muted-light {
+  --tw-gradient-to: var(--text-muted-light-color);
 }
 
 .hover\:from-red-50:hover {
@@ -2842,6 +2990,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.hover\:from-accent:hover {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-accent-light:hover {
+  --tw-gradient-from: var(--text-accent-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-muted:hover {
+  --tw-gradient-from: var(--text-muted-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-muted-light:hover {
+  --tw-gradient-from: var(--text-muted-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .hover\:via-red-50:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -2922,6 +3090,22 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.hover\:via-accent:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-accent-light:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-muted:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-muted-light:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .hover\:to-red-50:hover {
   --tw-gradient-to: #fef2f2;
 }
@@ -3000,6 +3184,22 @@ select {
 
 .hover\:to-default:hover {
   --tw-gradient-to: var(--text-default-color);
+}
+
+.hover\:to-accent:hover {
+  --tw-gradient-to: var(--text-default-color);
+}
+
+.hover\:to-accent-light:hover {
+  --tw-gradient-to: var(--text-accent-light-color);
+}
+
+.hover\:to-muted:hover {
+  --tw-gradient-to: var(--text-muted-color);
+}
+
+.hover\:to-muted-light:hover {
+  --tw-gradient-to: var(--text-muted-light-color);
 }
 
 .focus\:from-red-50:focus {
@@ -3102,6 +3302,26 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.focus\:from-accent:focus {
+  --tw-gradient-from: var(--text-default-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-accent-light:focus {
+  --tw-gradient-from: var(--text-accent-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-muted:focus {
+  --tw-gradient-from: var(--text-muted-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-muted-light:focus {
+  --tw-gradient-from: var(--text-muted-light-color);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .focus\:via-red-50:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
 }
@@ -3182,6 +3402,22 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.focus\:via-accent:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-accent-light:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-muted:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-muted-light:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
 .focus\:to-red-50:focus {
   --tw-gradient-to: #fef2f2;
 }
@@ -3260,6 +3496,22 @@ select {
 
 .focus\:to-default:focus {
   --tw-gradient-to: var(--text-default-color);
+}
+
+.focus\:to-accent:focus {
+  --tw-gradient-to: var(--text-default-color);
+}
+
+.focus\:to-accent-light:focus {
+  --tw-gradient-to: var(--text-accent-light-color);
+}
+
+.focus\:to-muted:focus {
+  --tw-gradient-to: var(--text-muted-color);
+}
+
+.focus\:to-muted-light:focus {
+  --tw-gradient-to: var(--text-muted-light-color);
 }
 
 .bg-opacity-0 {
@@ -3736,6 +3988,22 @@ select {
   border-color: var(--text-default-color);
 }
 
+.border-accent {
+  border-color: var(--text-default-color);
+}
+
+.border-accent-light {
+  border-color: var(--text-accent-light-color);
+}
+
+.border-muted {
+  border-color: var(--text-muted-color);
+}
+
+.border-muted-light {
+  border-color: var(--text-muted-light-color);
+}
+
 .group:hover .group-hover\:border-red-50 {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -3828,6 +4096,22 @@ select {
 
 .group:hover .group-hover\:border-default {
   border-color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:border-accent {
+  border-color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:border-accent-light {
+  border-color: var(--text-accent-light-color);
+}
+
+.group:hover .group-hover\:border-muted {
+  border-color: var(--text-muted-color);
+}
+
+.group:hover .group-hover\:border-muted-light {
+  border-color: var(--text-muted-light-color);
 }
 
 .focus-within\:border-red-50:focus-within {
@@ -3924,6 +4208,22 @@ select {
   border-color: var(--text-default-color);
 }
 
+.focus-within\:border-accent:focus-within {
+  border-color: var(--text-default-color);
+}
+
+.focus-within\:border-accent-light:focus-within {
+  border-color: var(--text-accent-light-color);
+}
+
+.focus-within\:border-muted:focus-within {
+  border-color: var(--text-muted-color);
+}
+
+.focus-within\:border-muted-light:focus-within {
+  border-color: var(--text-muted-light-color);
+}
+
 .hover\:border-red-50:hover {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -4018,6 +4318,22 @@ select {
   border-color: var(--text-default-color);
 }
 
+.hover\:border-accent:hover {
+  border-color: var(--text-default-color);
+}
+
+.hover\:border-accent-light:hover {
+  border-color: var(--text-accent-light-color);
+}
+
+.hover\:border-muted:hover {
+  border-color: var(--text-muted-color);
+}
+
+.hover\:border-muted-light:hover {
+  border-color: var(--text-muted-light-color);
+}
+
 .focus\:border-red-50:focus {
   --tw-border-opacity: 1;
   border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -4110,6 +4426,22 @@ select {
 
 .focus\:border-default:focus {
   border-color: var(--text-default-color);
+}
+
+.focus\:border-accent:focus {
+  border-color: var(--text-default-color);
+}
+
+.focus\:border-accent-light:focus {
+  border-color: var(--text-accent-light-color);
+}
+
+.focus\:border-muted:focus {
+  border-color: var(--text-muted-color);
+}
+
+.focus\:border-muted-light:focus {
+  border-color: var(--text-muted-light-color);
 }
 
 .border-opacity-0 {
@@ -10049,6 +10381,54 @@ select {
   color: var(--text-default-color);
 }
 
+.placeholder-accent::-moz-placeholder {
+  color: var(--text-default-color);
+}
+
+.placeholder-accent:-ms-input-placeholder {
+  color: var(--text-default-color);
+}
+
+.placeholder-accent::placeholder {
+  color: var(--text-default-color);
+}
+
+.placeholder-accent-light::-moz-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-accent-light:-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-accent-light::placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.placeholder-muted::-moz-placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted:-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted::placeholder {
+  color: var(--text-muted-color);
+}
+
+.placeholder-muted-light::-moz-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.placeholder-muted-light:-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.placeholder-muted-light::placeholder {
+  color: var(--text-muted-light-color);
+}
+
 .focus\:placeholder-red-50:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -10329,6 +10709,54 @@ select {
 
 .focus\:placeholder-default:focus::placeholder {
   color: var(--text-default-color);
+}
+
+.focus\:placeholder-accent:focus::-moz-placeholder {
+  color: var(--text-default-color);
+}
+
+.focus\:placeholder-accent:focus:-ms-input-placeholder {
+  color: var(--text-default-color);
+}
+
+.focus\:placeholder-accent:focus::placeholder {
+  color: var(--text-default-color);
+}
+
+.focus\:placeholder-accent-light:focus::-moz-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-accent-light:focus::placeholder {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:placeholder-muted:focus::-moz-placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted:focus:-ms-input-placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted:focus::placeholder {
+  color: var(--text-muted-color);
+}
+
+.focus\:placeholder-muted-light:focus::-moz-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+  color: var(--text-muted-light-color);
+}
+
+.focus\:placeholder-muted-light:focus::placeholder {
+  color: var(--text-muted-light-color);
 }
 
 .placeholder-opacity-0::-moz-placeholder {
@@ -13778,6 +14206,22 @@ select {
   --tw-ring-offset-color: var(--text-default-color);
 }
 
+.ring-offset-accent {
+  --tw-ring-offset-color: var(--text-default-color);
+}
+
+.ring-offset-accent-light {
+  --tw-ring-offset-color: var(--text-accent-light-color);
+}
+
+.ring-offset-muted {
+  --tw-ring-offset-color: var(--text-muted-color);
+}
+
+.ring-offset-muted-light {
+  --tw-ring-offset-color: var(--text-muted-light-color);
+}
+
 .focus-within\:ring-offset-red-50:focus-within {
   --tw-ring-offset-color: #fef2f2;
 }
@@ -13858,6 +14302,22 @@ select {
   --tw-ring-offset-color: var(--text-default-color);
 }
 
+.focus-within\:ring-offset-accent:focus-within {
+  --tw-ring-offset-color: var(--text-default-color);
+}
+
+.focus-within\:ring-offset-accent-light:focus-within {
+  --tw-ring-offset-color: var(--text-accent-light-color);
+}
+
+.focus-within\:ring-offset-muted:focus-within {
+  --tw-ring-offset-color: var(--text-muted-color);
+}
+
+.focus-within\:ring-offset-muted-light:focus-within {
+  --tw-ring-offset-color: var(--text-muted-light-color);
+}
+
 .focus\:ring-offset-red-50:focus {
   --tw-ring-offset-color: #fef2f2;
 }
@@ -13936,6 +14396,22 @@ select {
 
 .focus\:ring-offset-default:focus {
   --tw-ring-offset-color: var(--text-default-color);
+}
+
+.focus\:ring-offset-accent:focus {
+  --tw-ring-offset-color: var(--text-default-color);
+}
+
+.focus\:ring-offset-accent-light:focus {
+  --tw-ring-offset-color: var(--text-accent-light-color);
+}
+
+.focus\:ring-offset-muted:focus {
+  --tw-ring-offset-color: var(--text-muted-color);
+}
+
+.focus\:ring-offset-muted-light:focus {
+  --tw-ring-offset-color: var(--text-muted-light-color);
 }
 
 .ring-offset-0 {
@@ -14092,6 +14568,22 @@ select {
   --tw-ring-color: var(--text-default-color);
 }
 
+.ring-accent {
+  --tw-ring-color: var(--text-default-color);
+}
+
+.ring-accent-light {
+  --tw-ring-color: var(--text-accent-light-color);
+}
+
+.ring-muted {
+  --tw-ring-color: var(--text-muted-color);
+}
+
+.ring-muted-light {
+  --tw-ring-color: var(--text-muted-light-color);
+}
+
 .focus-within\:ring-red-50:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -14186,6 +14678,22 @@ select {
   --tw-ring-color: var(--text-default-color);
 }
 
+.focus-within\:ring-accent:focus-within {
+  --tw-ring-color: var(--text-default-color);
+}
+
+.focus-within\:ring-accent-light:focus-within {
+  --tw-ring-color: var(--text-accent-light-color);
+}
+
+.focus-within\:ring-muted:focus-within {
+  --tw-ring-color: var(--text-muted-color);
+}
+
+.focus-within\:ring-muted-light:focus-within {
+  --tw-ring-color: var(--text-muted-light-color);
+}
+
 .focus\:ring-red-50:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -14278,6 +14786,22 @@ select {
 
 .focus\:ring-default:focus {
   --tw-ring-color: var(--text-default-color);
+}
+
+.focus\:ring-accent:focus {
+  --tw-ring-color: var(--text-default-color);
+}
+
+.focus\:ring-accent-light:focus {
+  --tw-ring-color: var(--text-accent-light-color);
+}
+
+.focus\:ring-muted:focus {
+  --tw-ring-color: var(--text-muted-color);
+}
+
+.focus\:ring-muted-light:focus {
+  --tw-ring-color: var(--text-muted-light-color);
 }
 
 .ring-opacity-0 {
@@ -14598,6 +15122,22 @@ select {
   color: var(--text-default-color);
 }
 
+.text-accent {
+  color: var(--text-default-color);
+}
+
+.text-accent-light {
+  color: var(--text-accent-light-color);
+}
+
+.text-muted {
+  color: var(--text-muted-color);
+}
+
+.text-muted-light {
+  color: var(--text-muted-light-color);
+}
+
 .group:hover .group-hover\:text-red-50 {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -14690,6 +15230,22 @@ select {
 
 .group:hover .group-hover\:text-default {
   color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:text-accent {
+  color: var(--text-default-color);
+}
+
+.group:hover .group-hover\:text-accent-light {
+  color: var(--text-accent-light-color);
+}
+
+.group:hover .group-hover\:text-muted {
+  color: var(--text-muted-color);
+}
+
+.group:hover .group-hover\:text-muted-light {
+  color: var(--text-muted-light-color);
 }
 
 .focus-within\:text-red-50:focus-within {
@@ -14786,6 +15342,22 @@ select {
   color: var(--text-default-color);
 }
 
+.focus-within\:text-accent:focus-within {
+  color: var(--text-default-color);
+}
+
+.focus-within\:text-accent-light:focus-within {
+  color: var(--text-accent-light-color);
+}
+
+.focus-within\:text-muted:focus-within {
+  color: var(--text-muted-color);
+}
+
+.focus-within\:text-muted-light:focus-within {
+  color: var(--text-muted-light-color);
+}
+
 .hover\:text-red-50:hover {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -14880,6 +15452,22 @@ select {
   color: var(--text-default-color);
 }
 
+.hover\:text-accent:hover {
+  color: var(--text-default-color);
+}
+
+.hover\:text-accent-light:hover {
+  color: var(--text-accent-light-color);
+}
+
+.hover\:text-muted:hover {
+  color: var(--text-muted-color);
+}
+
+.hover\:text-muted-light:hover {
+  color: var(--text-muted-light-color);
+}
+
 .focus\:text-red-50:focus {
   --tw-text-opacity: 1;
   color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -14972,6 +15560,22 @@ select {
 
 .focus\:text-default:focus {
   color: var(--text-default-color);
+}
+
+.focus\:text-accent:focus {
+  color: var(--text-default-color);
+}
+
+.focus\:text-accent-light:focus {
+  color: var(--text-accent-light-color);
+}
+
+.focus\:text-muted:focus {
+  color: var(--text-muted-color);
+}
+
+.focus\:text-muted-light:focus {
+  color: var(--text-muted-light-color);
 }
 
 .text-opacity-0 {
@@ -19893,9 +20497,29 @@ select {
           animation: bounce 1s infinite;
 }
 
-.section {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.theme-light {
+  --page-background-color: #F5F6F9;
+  --card-background-color: #FFF;
+  --button-background-color: #47CDFF;
+  --header-background-color: #FFF;
+  --text-default-color: #222;
+  --text-accent-color: #47CDFF;
+  --text-accent-light-color: #8AE2FE;
+  --text-muted-color: rgba(0, 0, 0, 0.3);
+  --text-muted-light-color: rgba(255, 255, 255, 0.1);
+  --text-muted-light-color: #E1E6E8;
+}
+
+.theme-dark {
+  --page-background-color: #17181E;
+  --card-background-color: #1F2027;
+  --button-background-color: #59B6F9;
+  --header-background-color: #1F2027;
+  --text-default-color: #FFF;
+  --text-accent-color: #47CDFF;
+  --text-accent-light-color: #8AE2FE;
+  --text-muted-color: rgba(255, 255, 255, 0.5);
+  --text-muted-light-color: rgba(255, 255, 255, 0.3);
 }
 
 .button {
@@ -19921,20 +20545,13 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.theme-light {
-  --page-background-color: #F5F6F9;
-  --card-background-color: #FFF;
-  --button-background-color: #47CDFF;
-  --header-background-color: #FFF;
-  --text-default-color: #222;
+.section {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.theme-dark {
-  --page-background-color: #17181E;
-  --card-background-color: #1F2027;
-  --button-background-color: #59B6F9;
-  --header-background-color: #1F2027;
-  --text-default-color: #FFF;
+body, button {
+  color: var(--text-default-color);
 }
 
 @media (min-width: 640px) {
@@ -20982,6 +21599,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .sm\:divide-accent > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
+  .sm\:divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:divide-muted > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .sm\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -21260,6 +21893,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .sm\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .sm\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .group:hover .sm\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -21352,6 +22001,22 @@ select {
 
   .group:hover .sm\:group-hover\:bg-default {
     background-color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .group:hover .sm\:group-hover\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
   }
 
   .sm\:focus-within\:bg-red-50:focus-within {
@@ -21448,6 +22113,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .sm\:focus-within\:bg-accent:focus-within {
+    background-color: var(--text-default-color);
+  }
+
+  .sm\:focus-within\:bg-accent-light:focus-within {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus-within\:bg-muted:focus-within {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:focus-within\:bg-muted-light:focus-within {
+    background-color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -21542,6 +22223,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .sm\:hover\:bg-accent:hover {
+    background-color: var(--text-default-color);
+  }
+
+  .sm\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:bg-muted:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -21634,6 +22331,22 @@ select {
 
   .sm\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:bg-accent:focus {
+    background-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:bg-muted:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .sm\:bg-none {
@@ -21772,6 +22485,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:from-accent {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-accent-light {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-muted {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-muted-light {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -21852,6 +22585,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:via-accent {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-accent-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-muted-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -21930,6 +22679,22 @@ select {
 
   .sm\:to-default {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:to-accent {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:to-accent-light {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .sm\:to-muted {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .sm\:to-muted-light {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .sm\:hover\:from-red-50:hover {
@@ -22032,6 +22797,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:hover\:from-accent:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-accent-light:hover {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-muted:hover {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-muted-light:hover {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -22112,6 +22897,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:hover\:via-accent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-accent-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-muted:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-muted-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -22190,6 +22991,22 @@ select {
 
   .sm\:hover\:to-default:hover {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:hover\:to-accent:hover {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:hover\:to-accent-light:hover {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:to-muted:hover {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .sm\:hover\:to-muted-light:hover {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .sm\:focus\:from-red-50:focus {
@@ -22292,6 +23109,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:focus\:from-accent:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-accent-light:focus {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-muted:focus {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-muted-light:focus {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -22372,6 +23209,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .sm\:focus\:via-accent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-accent-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-muted:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-muted-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .sm\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -22450,6 +23303,22 @@ select {
 
   .sm\:focus\:to-default:focus {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:focus\:to-accent:focus {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .sm\:focus\:to-accent-light:focus {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:to-muted:focus {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .sm\:focus\:to-muted-light:focus {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .sm\:bg-opacity-0 {
@@ -22926,6 +23795,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .sm\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .sm\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .group:hover .sm\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -23018,6 +23903,22 @@ select {
 
   .group:hover .sm\:group-hover\:border-default {
     border-color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .group:hover .sm\:group-hover\:border-muted-light {
+    border-color: var(--text-muted-light-color);
   }
 
   .sm\:focus-within\:border-red-50:focus-within {
@@ -23114,6 +24015,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .sm\:focus-within\:border-accent:focus-within {
+    border-color: var(--text-default-color);
+  }
+
+  .sm\:focus-within\:border-accent-light:focus-within {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus-within\:border-muted:focus-within {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:focus-within\:border-muted-light:focus-within {
+    border-color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -23208,6 +24125,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .sm\:hover\:border-accent:hover {
+    border-color: var(--text-default-color);
+  }
+
+  .sm\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:border-muted:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -23300,6 +24233,22 @@ select {
 
   .sm\:focus\:border-default:focus {
     border-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:border-accent:focus {
+    border-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:border-muted:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .sm\:border-opacity-0 {
@@ -29239,6 +30188,54 @@ select {
     color: var(--text-default-color);
   }
 
+  .sm\:placeholder-accent::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:placeholder-accent:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:placeholder-accent::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:placeholder-muted::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -29519,6 +30516,54 @@ select {
 
   .sm\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-accent:focus::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .sm\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder {
@@ -32955,6 +34000,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .sm\:ring-offset-accent {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .sm\:ring-offset-accent-light {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .sm\:ring-offset-muted {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .sm\:ring-offset-muted-light {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -33035,6 +34096,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .sm\:focus-within\:ring-offset-accent:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .sm\:focus-within\:ring-offset-accent-light:focus-within {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus-within\:ring-offset-muted:focus-within {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .sm\:focus-within\:ring-offset-muted-light:focus-within {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -33113,6 +34190,22 @@ select {
 
   .sm\:focus\:ring-offset-default:focus {
     --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:ring-offset-accent:focus {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:ring-offset-accent-light:focus {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:ring-offset-muted:focus {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:ring-offset-muted-light:focus {
+    --tw-ring-offset-color: var(--text-muted-light-color);
   }
 
   .sm\:ring-offset-0 {
@@ -33269,6 +34362,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .sm\:ring-accent {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .sm\:ring-accent-light {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .sm\:ring-muted {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .sm\:ring-muted-light {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -33363,6 +34472,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .sm\:focus-within\:ring-accent:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .sm\:focus-within\:ring-accent-light:focus-within {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus-within\:ring-muted:focus-within {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .sm\:focus-within\:ring-muted-light:focus-within {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -33455,6 +34580,22 @@ select {
 
   .sm\:focus\:ring-default:focus {
     --tw-ring-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:ring-accent:focus {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .sm\:focus\:ring-accent-light:focus {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:ring-muted:focus {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:ring-muted-light:focus {
+    --tw-ring-color: var(--text-muted-light-color);
   }
 
   .sm\:ring-opacity-0 {
@@ -33775,6 +34916,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .sm\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .sm\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .group:hover .sm\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -33867,6 +35024,22 @@ select {
 
   .group:hover .sm\:group-hover\:text-default {
     color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .group:hover .sm\:group-hover\:text-muted-light {
+    color: var(--text-muted-light-color);
   }
 
   .sm\:focus-within\:text-red-50:focus-within {
@@ -33963,6 +35136,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .sm\:focus-within\:text-accent:focus-within {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus-within\:text-accent-light:focus-within {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus-within\:text-muted:focus-within {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus-within\:text-muted-light:focus-within {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -34057,6 +35246,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .sm\:hover\:text-accent:hover {
+    color: var(--text-default-color);
+  }
+
+  .sm\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:hover\:text-muted:hover {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .sm\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -34149,6 +35354,22 @@ select {
 
   .sm\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .sm\:focus\:text-accent:focus {
+    color: var(--text-default-color);
+  }
+
+  .sm\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .sm\:focus\:text-muted:focus {
+    color: var(--text-muted-color);
+  }
+
+  .sm\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .sm\:text-opacity-0 {
@@ -40050,6 +41271,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .md\:divide-accent > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
+  .md\:divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:divide-muted > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -40328,6 +41565,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .md\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .md\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .group:hover .md\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -40420,6 +41673,22 @@ select {
 
   .group:hover .md\:group-hover\:bg-default {
     background-color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .group:hover .md\:group-hover\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
   }
 
   .md\:focus-within\:bg-red-50:focus-within {
@@ -40516,6 +41785,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .md\:focus-within\:bg-accent:focus-within {
+    background-color: var(--text-default-color);
+  }
+
+  .md\:focus-within\:bg-accent-light:focus-within {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus-within\:bg-muted:focus-within {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:focus-within\:bg-muted-light:focus-within {
+    background-color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -40610,6 +41895,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .md\:hover\:bg-accent:hover {
+    background-color: var(--text-default-color);
+  }
+
+  .md\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:bg-muted:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -40702,6 +42003,22 @@ select {
 
   .md\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .md\:focus\:bg-accent:focus {
+    background-color: var(--text-default-color);
+  }
+
+  .md\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:bg-muted:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .md\:bg-none {
@@ -40840,6 +42157,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:from-accent {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-accent-light {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-muted {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-muted-light {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -40920,6 +42257,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:via-accent {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-accent-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-muted-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -40998,6 +42351,22 @@ select {
 
   .md\:to-default {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:to-accent {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:to-accent-light {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .md\:to-muted {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .md\:to-muted-light {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .md\:hover\:from-red-50:hover {
@@ -41100,6 +42469,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:hover\:from-accent:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-accent-light:hover {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-muted:hover {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-muted-light:hover {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -41180,6 +42569,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:hover\:via-accent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-accent-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-muted:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-muted-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -41258,6 +42663,22 @@ select {
 
   .md\:hover\:to-default:hover {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:hover\:to-accent:hover {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:hover\:to-accent-light:hover {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:to-muted:hover {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .md\:hover\:to-muted-light:hover {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .md\:focus\:from-red-50:focus {
@@ -41360,6 +42781,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:focus\:from-accent:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-accent-light:focus {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-muted:focus {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-muted-light:focus {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -41440,6 +42881,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .md\:focus\:via-accent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-accent-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-muted:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-muted-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .md\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -41518,6 +42975,22 @@ select {
 
   .md\:focus\:to-default:focus {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:focus\:to-accent:focus {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .md\:focus\:to-accent-light:focus {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:to-muted:focus {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .md\:focus\:to-muted-light:focus {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .md\:bg-opacity-0 {
@@ -41994,6 +43467,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .md\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .md\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .group:hover .md\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -42086,6 +43575,22 @@ select {
 
   .group:hover .md\:group-hover\:border-default {
     border-color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .md\:group-hover\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .group:hover .md\:group-hover\:border-muted-light {
+    border-color: var(--text-muted-light-color);
   }
 
   .md\:focus-within\:border-red-50:focus-within {
@@ -42182,6 +43687,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .md\:focus-within\:border-accent:focus-within {
+    border-color: var(--text-default-color);
+  }
+
+  .md\:focus-within\:border-accent-light:focus-within {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus-within\:border-muted:focus-within {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:focus-within\:border-muted-light:focus-within {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -42276,6 +43797,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .md\:hover\:border-accent:hover {
+    border-color: var(--text-default-color);
+  }
+
+  .md\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:border-muted:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -42368,6 +43905,22 @@ select {
 
   .md\:focus\:border-default:focus {
     border-color: var(--text-default-color);
+  }
+
+  .md\:focus\:border-accent:focus {
+    border-color: var(--text-default-color);
+  }
+
+  .md\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:border-muted:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .md\:border-opacity-0 {
@@ -48307,6 +49860,54 @@ select {
     color: var(--text-default-color);
   }
 
+  .md\:placeholder-accent::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:placeholder-accent:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:placeholder-accent::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:placeholder-muted::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -48587,6 +50188,54 @@ select {
 
   .md\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-accent:focus::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:placeholder-muted:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .md\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder {
@@ -52023,6 +53672,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .md\:ring-offset-accent {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .md\:ring-offset-accent-light {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .md\:ring-offset-muted {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .md\:ring-offset-muted-light {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .md\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -52103,6 +53768,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .md\:focus-within\:ring-offset-accent:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .md\:focus-within\:ring-offset-accent-light:focus-within {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus-within\:ring-offset-muted:focus-within {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .md\:focus-within\:ring-offset-muted-light:focus-within {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -52181,6 +53862,22 @@ select {
 
   .md\:focus\:ring-offset-default:focus {
     --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .md\:focus\:ring-offset-accent:focus {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .md\:focus\:ring-offset-accent-light:focus {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:ring-offset-muted:focus {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:ring-offset-muted-light:focus {
+    --tw-ring-offset-color: var(--text-muted-light-color);
   }
 
   .md\:ring-offset-0 {
@@ -52337,6 +54034,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .md\:ring-accent {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .md\:ring-accent-light {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .md\:ring-muted {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .md\:ring-muted-light {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .md\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -52431,6 +54144,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .md\:focus-within\:ring-accent:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .md\:focus-within\:ring-accent-light:focus-within {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus-within\:ring-muted:focus-within {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .md\:focus-within\:ring-muted-light:focus-within {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -52523,6 +54252,22 @@ select {
 
   .md\:focus\:ring-default:focus {
     --tw-ring-color: var(--text-default-color);
+  }
+
+  .md\:focus\:ring-accent:focus {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .md\:focus\:ring-accent-light:focus {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:ring-muted:focus {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .md\:focus\:ring-muted-light:focus {
+    --tw-ring-color: var(--text-muted-light-color);
   }
 
   .md\:ring-opacity-0 {
@@ -52843,6 +54588,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .md\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .md\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .md\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .group:hover .md\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -52935,6 +54696,22 @@ select {
 
   .group:hover .md\:group-hover\:text-default {
     color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .group:hover .md\:group-hover\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .group:hover .md\:group-hover\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .group:hover .md\:group-hover\:text-muted-light {
+    color: var(--text-muted-light-color);
   }
 
   .md\:focus-within\:text-red-50:focus-within {
@@ -53031,6 +54808,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .md\:focus-within\:text-accent:focus-within {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus-within\:text-accent-light:focus-within {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus-within\:text-muted:focus-within {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus-within\:text-muted-light:focus-within {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -53125,6 +54918,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .md\:hover\:text-accent:hover {
+    color: var(--text-default-color);
+  }
+
+  .md\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:hover\:text-muted:hover {
+    color: var(--text-muted-color);
+  }
+
+  .md\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .md\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -53217,6 +55026,22 @@ select {
 
   .md\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .md\:focus\:text-accent:focus {
+    color: var(--text-default-color);
+  }
+
+  .md\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .md\:focus\:text-muted:focus {
+    color: var(--text-muted-color);
+  }
+
+  .md\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .md\:text-opacity-0 {
@@ -59118,6 +60943,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .lg\:divide-accent > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
+  .lg\:divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:divide-muted > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -59396,6 +61237,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .lg\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .lg\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .group:hover .lg\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -59488,6 +61345,22 @@ select {
 
   .group:hover .lg\:group-hover\:bg-default {
     background-color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .group:hover .lg\:group-hover\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
   }
 
   .lg\:focus-within\:bg-red-50:focus-within {
@@ -59584,6 +61457,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .lg\:focus-within\:bg-accent:focus-within {
+    background-color: var(--text-default-color);
+  }
+
+  .lg\:focus-within\:bg-accent-light:focus-within {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus-within\:bg-muted:focus-within {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:focus-within\:bg-muted-light:focus-within {
+    background-color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -59678,6 +61567,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .lg\:hover\:bg-accent:hover {
+    background-color: var(--text-default-color);
+  }
+
+  .lg\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:bg-muted:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -59770,6 +61675,22 @@ select {
 
   .lg\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:bg-accent:focus {
+    background-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:bg-muted:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .lg\:bg-none {
@@ -59908,6 +61829,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:from-accent {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-accent-light {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-muted {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-muted-light {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -59988,6 +61929,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:via-accent {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-accent-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-muted-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -60066,6 +62023,22 @@ select {
 
   .lg\:to-default {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:to-accent {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:to-accent-light {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .lg\:to-muted {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .lg\:to-muted-light {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .lg\:hover\:from-red-50:hover {
@@ -60168,6 +62141,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:hover\:from-accent:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-accent-light:hover {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-muted:hover {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-muted-light:hover {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -60248,6 +62241,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:hover\:via-accent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-accent-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-muted:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-muted-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -60326,6 +62335,22 @@ select {
 
   .lg\:hover\:to-default:hover {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:hover\:to-accent:hover {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:hover\:to-accent-light:hover {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:to-muted:hover {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .lg\:hover\:to-muted-light:hover {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .lg\:focus\:from-red-50:focus {
@@ -60428,6 +62453,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:focus\:from-accent:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-accent-light:focus {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-muted:focus {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-muted-light:focus {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -60508,6 +62553,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .lg\:focus\:via-accent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-accent-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-muted:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-muted-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .lg\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -60586,6 +62647,22 @@ select {
 
   .lg\:focus\:to-default:focus {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:focus\:to-accent:focus {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .lg\:focus\:to-accent-light:focus {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:to-muted:focus {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .lg\:focus\:to-muted-light:focus {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .lg\:bg-opacity-0 {
@@ -61062,6 +63139,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .lg\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .lg\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .group:hover .lg\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -61154,6 +63247,22 @@ select {
 
   .group:hover .lg\:group-hover\:border-default {
     border-color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .group:hover .lg\:group-hover\:border-muted-light {
+    border-color: var(--text-muted-light-color);
   }
 
   .lg\:focus-within\:border-red-50:focus-within {
@@ -61250,6 +63359,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .lg\:focus-within\:border-accent:focus-within {
+    border-color: var(--text-default-color);
+  }
+
+  .lg\:focus-within\:border-accent-light:focus-within {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus-within\:border-muted:focus-within {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:focus-within\:border-muted-light:focus-within {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -61344,6 +63469,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .lg\:hover\:border-accent:hover {
+    border-color: var(--text-default-color);
+  }
+
+  .lg\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:border-muted:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -61436,6 +63577,22 @@ select {
 
   .lg\:focus\:border-default:focus {
     border-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:border-accent:focus {
+    border-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:border-muted:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .lg\:border-opacity-0 {
@@ -67375,6 +69532,54 @@ select {
     color: var(--text-default-color);
   }
 
+  .lg\:placeholder-accent::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:placeholder-accent:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:placeholder-accent::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:placeholder-muted::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -67655,6 +69860,54 @@ select {
 
   .lg\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-accent:focus::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .lg\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder {
@@ -71091,6 +73344,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .lg\:ring-offset-accent {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .lg\:ring-offset-accent-light {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .lg\:ring-offset-muted {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .lg\:ring-offset-muted-light {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -71171,6 +73440,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .lg\:focus-within\:ring-offset-accent:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .lg\:focus-within\:ring-offset-accent-light:focus-within {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus-within\:ring-offset-muted:focus-within {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .lg\:focus-within\:ring-offset-muted-light:focus-within {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -71249,6 +73534,22 @@ select {
 
   .lg\:focus\:ring-offset-default:focus {
     --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:ring-offset-accent:focus {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:ring-offset-accent-light:focus {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:ring-offset-muted:focus {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:ring-offset-muted-light:focus {
+    --tw-ring-offset-color: var(--text-muted-light-color);
   }
 
   .lg\:ring-offset-0 {
@@ -71405,6 +73706,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .lg\:ring-accent {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .lg\:ring-accent-light {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .lg\:ring-muted {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .lg\:ring-muted-light {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -71499,6 +73816,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .lg\:focus-within\:ring-accent:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .lg\:focus-within\:ring-accent-light:focus-within {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus-within\:ring-muted:focus-within {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .lg\:focus-within\:ring-muted-light:focus-within {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -71591,6 +73924,22 @@ select {
 
   .lg\:focus\:ring-default:focus {
     --tw-ring-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:ring-accent:focus {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .lg\:focus\:ring-accent-light:focus {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:ring-muted:focus {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:ring-muted-light:focus {
+    --tw-ring-color: var(--text-muted-light-color);
   }
 
   .lg\:ring-opacity-0 {
@@ -71911,6 +74260,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .lg\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .lg\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .group:hover .lg\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -72003,6 +74368,22 @@ select {
 
   .group:hover .lg\:group-hover\:text-default {
     color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .group:hover .lg\:group-hover\:text-muted-light {
+    color: var(--text-muted-light-color);
   }
 
   .lg\:focus-within\:text-red-50:focus-within {
@@ -72099,6 +74480,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .lg\:focus-within\:text-accent:focus-within {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus-within\:text-accent-light:focus-within {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus-within\:text-muted:focus-within {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus-within\:text-muted-light:focus-within {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -72193,6 +74590,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .lg\:hover\:text-accent:hover {
+    color: var(--text-default-color);
+  }
+
+  .lg\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:hover\:text-muted:hover {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .lg\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -72285,6 +74698,22 @@ select {
 
   .lg\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .lg\:focus\:text-accent:focus {
+    color: var(--text-default-color);
+  }
+
+  .lg\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .lg\:focus\:text-muted:focus {
+    color: var(--text-muted-color);
+  }
+
+  .lg\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .lg\:text-opacity-0 {
@@ -78186,6 +80615,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .xl\:divide-accent > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
+  .xl\:divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:divide-muted > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -78464,6 +80909,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .xl\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .xl\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .group:hover .xl\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -78556,6 +81017,22 @@ select {
 
   .group:hover .xl\:group-hover\:bg-default {
     background-color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .group:hover .xl\:group-hover\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
   }
 
   .xl\:focus-within\:bg-red-50:focus-within {
@@ -78652,6 +81129,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .xl\:focus-within\:bg-accent:focus-within {
+    background-color: var(--text-default-color);
+  }
+
+  .xl\:focus-within\:bg-accent-light:focus-within {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus-within\:bg-muted:focus-within {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:focus-within\:bg-muted-light:focus-within {
+    background-color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -78746,6 +81239,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .xl\:hover\:bg-accent:hover {
+    background-color: var(--text-default-color);
+  }
+
+  .xl\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:bg-muted:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -78838,6 +81347,22 @@ select {
 
   .xl\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:bg-accent:focus {
+    background-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:bg-muted:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .xl\:bg-none {
@@ -78976,6 +81501,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:from-accent {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-accent-light {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-muted {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-muted-light {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -79056,6 +81601,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:via-accent {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-accent-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-muted-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -79134,6 +81695,22 @@ select {
 
   .xl\:to-default {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:to-accent {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:to-accent-light {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .xl\:to-muted {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .xl\:to-muted-light {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .xl\:hover\:from-red-50:hover {
@@ -79236,6 +81813,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:hover\:from-accent:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-accent-light:hover {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-muted:hover {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-muted-light:hover {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -79316,6 +81913,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:hover\:via-accent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-accent-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-muted:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-muted-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -79394,6 +82007,22 @@ select {
 
   .xl\:hover\:to-default:hover {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:hover\:to-accent:hover {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:hover\:to-accent-light:hover {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:to-muted:hover {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .xl\:hover\:to-muted-light:hover {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .xl\:focus\:from-red-50:focus {
@@ -79496,6 +82125,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:focus\:from-accent:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-accent-light:focus {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-muted:focus {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-muted-light:focus {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -79576,6 +82225,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .xl\:focus\:via-accent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-accent-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-muted:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-muted-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .xl\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -79654,6 +82319,22 @@ select {
 
   .xl\:focus\:to-default:focus {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:focus\:to-accent:focus {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .xl\:focus\:to-accent-light:focus {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:to-muted:focus {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .xl\:focus\:to-muted-light:focus {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .xl\:bg-opacity-0 {
@@ -80130,6 +82811,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .xl\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .xl\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .group:hover .xl\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -80222,6 +82919,22 @@ select {
 
   .group:hover .xl\:group-hover\:border-default {
     border-color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .group:hover .xl\:group-hover\:border-muted-light {
+    border-color: var(--text-muted-light-color);
   }
 
   .xl\:focus-within\:border-red-50:focus-within {
@@ -80318,6 +83031,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .xl\:focus-within\:border-accent:focus-within {
+    border-color: var(--text-default-color);
+  }
+
+  .xl\:focus-within\:border-accent-light:focus-within {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus-within\:border-muted:focus-within {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:focus-within\:border-muted-light:focus-within {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -80412,6 +83141,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .xl\:hover\:border-accent:hover {
+    border-color: var(--text-default-color);
+  }
+
+  .xl\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:border-muted:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -80504,6 +83249,22 @@ select {
 
   .xl\:focus\:border-default:focus {
     border-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:border-accent:focus {
+    border-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:border-muted:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .xl\:border-opacity-0 {
@@ -86443,6 +89204,54 @@ select {
     color: var(--text-default-color);
   }
 
+  .xl\:placeholder-accent::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:placeholder-accent:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:placeholder-accent::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:placeholder-muted::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -86723,6 +89532,54 @@ select {
 
   .xl\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-accent:focus::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .xl\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder {
@@ -90159,6 +93016,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .xl\:ring-offset-accent {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .xl\:ring-offset-accent-light {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .xl\:ring-offset-muted {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .xl\:ring-offset-muted-light {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -90239,6 +93112,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .xl\:focus-within\:ring-offset-accent:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .xl\:focus-within\:ring-offset-accent-light:focus-within {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus-within\:ring-offset-muted:focus-within {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .xl\:focus-within\:ring-offset-muted-light:focus-within {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -90317,6 +93206,22 @@ select {
 
   .xl\:focus\:ring-offset-default:focus {
     --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:ring-offset-accent:focus {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:ring-offset-accent-light:focus {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:ring-offset-muted:focus {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:ring-offset-muted-light:focus {
+    --tw-ring-offset-color: var(--text-muted-light-color);
   }
 
   .xl\:ring-offset-0 {
@@ -90473,6 +93378,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .xl\:ring-accent {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .xl\:ring-accent-light {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .xl\:ring-muted {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .xl\:ring-muted-light {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -90567,6 +93488,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .xl\:focus-within\:ring-accent:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .xl\:focus-within\:ring-accent-light:focus-within {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus-within\:ring-muted:focus-within {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .xl\:focus-within\:ring-muted-light:focus-within {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -90659,6 +93596,22 @@ select {
 
   .xl\:focus\:ring-default:focus {
     --tw-ring-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:ring-accent:focus {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .xl\:focus\:ring-accent-light:focus {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:ring-muted:focus {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:ring-muted-light:focus {
+    --tw-ring-color: var(--text-muted-light-color);
   }
 
   .xl\:ring-opacity-0 {
@@ -90979,6 +93932,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .xl\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .xl\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .group:hover .xl\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -91071,6 +94040,22 @@ select {
 
   .group:hover .xl\:group-hover\:text-default {
     color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .group:hover .xl\:group-hover\:text-muted-light {
+    color: var(--text-muted-light-color);
   }
 
   .xl\:focus-within\:text-red-50:focus-within {
@@ -91167,6 +94152,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .xl\:focus-within\:text-accent:focus-within {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus-within\:text-accent-light:focus-within {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus-within\:text-muted:focus-within {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus-within\:text-muted-light:focus-within {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -91261,6 +94262,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .xl\:hover\:text-accent:hover {
+    color: var(--text-default-color);
+  }
+
+  .xl\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:hover\:text-muted:hover {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .xl\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -91353,6 +94370,22 @@ select {
 
   .xl\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .xl\:focus\:text-accent:focus {
+    color: var(--text-default-color);
+  }
+
+  .xl\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .xl\:focus\:text-muted:focus {
+    color: var(--text-muted-color);
+  }
+
+  .xl\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .xl\:text-opacity-0 {
@@ -97254,6 +100287,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .\32xl\:divide-accent > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-default-color);
+  }
+
+  .\32xl\:divide-accent-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:divide-muted > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-color);
+  }
+
+  .\32xl\:divide-muted-light > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
     border-style: solid;
   }
@@ -97532,6 +100581,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .\32xl\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .\32xl\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .\32xl\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
+  }
+
   .group:hover .\32xl\:group-hover\:bg-red-50 {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -97624,6 +100689,22 @@ select {
 
   .group:hover .\32xl\:group-hover\:bg-default {
     background-color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-accent {
+    background-color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-accent-light {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-muted {
+    background-color: var(--text-muted-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-muted-light {
+    background-color: var(--text-muted-light-color);
   }
 
   .\32xl\:focus-within\:bg-red-50:focus-within {
@@ -97720,6 +100801,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .\32xl\:focus-within\:bg-accent:focus-within {
+    background-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus-within\:bg-accent-light:focus-within {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus-within\:bg-muted:focus-within {
+    background-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus-within\:bg-muted-light:focus-within {
+    background-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:hover\:bg-red-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -97814,6 +100911,22 @@ select {
     background-color: var(--text-default-color);
   }
 
+  .\32xl\:hover\:bg-accent:hover {
+    background-color: var(--text-default-color);
+  }
+
+  .\32xl\:hover\:bg-accent-light:hover {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:hover\:bg-muted:hover {
+    background-color: var(--text-muted-color);
+  }
+
+  .\32xl\:hover\:bg-muted-light:hover {
+    background-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:bg-red-50:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
@@ -97906,6 +101019,22 @@ select {
 
   .\32xl\:focus\:bg-default:focus {
     background-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:bg-accent:focus {
+    background-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:bg-accent-light:focus {
+    background-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:bg-muted:focus {
+    background-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:bg-muted-light:focus {
+    background-color: var(--text-muted-light-color);
   }
 
   .\32xl\:bg-none {
@@ -98044,6 +101173,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:from-accent {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-accent-light {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-muted {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-muted-light {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:via-red-50 {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -98124,6 +101273,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:via-accent {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-accent-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-muted {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-muted-light {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:to-red-50 {
     --tw-gradient-to: #fef2f2;
   }
@@ -98202,6 +101367,22 @@ select {
 
   .\32xl\:to-default {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:to-accent {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:to-accent-light {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .\32xl\:to-muted {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .\32xl\:to-muted-light {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .\32xl\:hover\:from-red-50:hover {
@@ -98304,6 +101485,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:hover\:from-accent:hover {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-accent-light:hover {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-muted:hover {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-muted-light:hover {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:hover\:via-red-50:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -98384,6 +101585,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:hover\:via-accent:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-accent-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-muted:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-muted-light:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:hover\:to-red-50:hover {
     --tw-gradient-to: #fef2f2;
   }
@@ -98462,6 +101679,22 @@ select {
 
   .\32xl\:hover\:to-default:hover {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:hover\:to-accent:hover {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:hover\:to-accent-light:hover {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .\32xl\:hover\:to-muted:hover {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .\32xl\:hover\:to-muted-light:hover {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .\32xl\:focus\:from-red-50:focus {
@@ -98564,6 +101797,26 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:focus\:from-accent:focus {
+    --tw-gradient-from: var(--text-default-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-accent-light:focus {
+    --tw-gradient-from: var(--text-accent-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-muted:focus {
+    --tw-gradient-from: var(--text-muted-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-muted-light:focus {
+    --tw-gradient-from: var(--text-muted-light-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:focus\:via-red-50:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #fef2f2, var(--tw-gradient-to, rgba(254, 242, 242, 0));
   }
@@ -98644,6 +101897,22 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
+  .\32xl\:focus\:via-accent:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-default-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-accent-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-accent-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-muted:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-muted-light:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--text-muted-light-color), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
   .\32xl\:focus\:to-red-50:focus {
     --tw-gradient-to: #fef2f2;
   }
@@ -98722,6 +101991,22 @@ select {
 
   .\32xl\:focus\:to-default:focus {
     --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:to-accent:focus {
+    --tw-gradient-to: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:to-accent-light:focus {
+    --tw-gradient-to: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:to-muted:focus {
+    --tw-gradient-to: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:to-muted-light:focus {
+    --tw-gradient-to: var(--text-muted-light-color);
   }
 
   .\32xl\:bg-opacity-0 {
@@ -99198,6 +102483,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .\32xl\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .\32xl\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .\32xl\:border-muted-light {
+    border-color: var(--text-muted-light-color);
+  }
+
   .group:hover .\32xl\:group-hover\:border-red-50 {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -99290,6 +102591,22 @@ select {
 
   .group:hover .\32xl\:group-hover\:border-default {
     border-color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-accent {
+    border-color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-accent-light {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-muted {
+    border-color: var(--text-muted-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-muted-light {
+    border-color: var(--text-muted-light-color);
   }
 
   .\32xl\:focus-within\:border-red-50:focus-within {
@@ -99386,6 +102703,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .\32xl\:focus-within\:border-accent:focus-within {
+    border-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus-within\:border-accent-light:focus-within {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus-within\:border-muted:focus-within {
+    border-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus-within\:border-muted-light:focus-within {
+    border-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:hover\:border-red-50:hover {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -99480,6 +102813,22 @@ select {
     border-color: var(--text-default-color);
   }
 
+  .\32xl\:hover\:border-accent:hover {
+    border-color: var(--text-default-color);
+  }
+
+  .\32xl\:hover\:border-accent-light:hover {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:hover\:border-muted:hover {
+    border-color: var(--text-muted-color);
+  }
+
+  .\32xl\:hover\:border-muted-light:hover {
+    border-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:border-red-50:focus {
     --tw-border-opacity: 1;
     border-color: rgba(254, 242, 242, var(--tw-border-opacity));
@@ -99572,6 +102921,22 @@ select {
 
   .\32xl\:focus\:border-default:focus {
     border-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:border-accent:focus {
+    border-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:border-accent-light:focus {
+    border-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:border-muted:focus {
+    border-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:border-muted-light:focus {
+    border-color: var(--text-muted-light-color);
   }
 
   .\32xl\:border-opacity-0 {
@@ -105511,6 +108876,54 @@ select {
     color: var(--text-default-color);
   }
 
+  .\32xl\:placeholder-accent::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:placeholder-accent:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:placeholder-accent::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:placeholder-accent-light::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:placeholder-accent-light:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:placeholder-accent-light::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:placeholder-muted::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:placeholder-muted:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:placeholder-muted::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:placeholder-muted-light::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .\32xl\:placeholder-muted-light:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .\32xl\:placeholder-muted-light::placeholder {
+    color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:placeholder-red-50:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-placeholder-opacity));
@@ -105791,6 +109204,54 @@ select {
 
   .\32xl\:focus\:placeholder-default:focus::placeholder {
     color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent:focus::placeholder {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent-light:focus::-moz-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent-light:focus:-ms-input-placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:placeholder-accent-light:focus::placeholder {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted:focus::-moz-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted:focus:-ms-input-placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted:focus::placeholder {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted-light:focus::-moz-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted-light:focus:-ms-input-placeholder {
+    color: var(--text-muted-light-color);
+  }
+
+  .\32xl\:focus\:placeholder-muted-light:focus::placeholder {
+    color: var(--text-muted-light-color);
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder {
@@ -109227,6 +112688,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .\32xl\:ring-offset-accent {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .\32xl\:ring-offset-accent-light {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:ring-offset-muted {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .\32xl\:ring-offset-muted-light {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus-within\:ring-offset-red-50:focus-within {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -109307,6 +112784,22 @@ select {
     --tw-ring-offset-color: var(--text-default-color);
   }
 
+  .\32xl\:focus-within\:ring-offset-accent:focus-within {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-accent-light:focus-within {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-muted:focus-within {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus-within\:ring-offset-muted-light:focus-within {
+    --tw-ring-offset-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:ring-offset-red-50:focus {
     --tw-ring-offset-color: #fef2f2;
   }
@@ -109385,6 +112878,22 @@ select {
 
   .\32xl\:focus\:ring-offset-default:focus {
     --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:ring-offset-accent:focus {
+    --tw-ring-offset-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:ring-offset-accent-light:focus {
+    --tw-ring-offset-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:ring-offset-muted:focus {
+    --tw-ring-offset-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:ring-offset-muted-light:focus {
+    --tw-ring-offset-color: var(--text-muted-light-color);
   }
 
   .\32xl\:ring-offset-0 {
@@ -109541,6 +113050,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .\32xl\:ring-accent {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .\32xl\:ring-accent-light {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:ring-muted {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .\32xl\:ring-muted-light {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus-within\:ring-red-50:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -109635,6 +113160,22 @@ select {
     --tw-ring-color: var(--text-default-color);
   }
 
+  .\32xl\:focus-within\:ring-accent:focus-within {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus-within\:ring-accent-light:focus-within {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus-within\:ring-muted:focus-within {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus-within\:ring-muted-light:focus-within {
+    --tw-ring-color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:ring-red-50:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(254, 242, 242, var(--tw-ring-opacity));
@@ -109727,6 +113268,22 @@ select {
 
   .\32xl\:focus\:ring-default:focus {
     --tw-ring-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:ring-accent:focus {
+    --tw-ring-color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:ring-accent-light:focus {
+    --tw-ring-color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:ring-muted:focus {
+    --tw-ring-color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:ring-muted-light:focus {
+    --tw-ring-color: var(--text-muted-light-color);
   }
 
   .\32xl\:ring-opacity-0 {
@@ -110047,6 +113604,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .\32xl\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:text-muted-light {
+    color: var(--text-muted-light-color);
+  }
+
   .group:hover .\32xl\:group-hover\:text-red-50 {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -110139,6 +113712,22 @@ select {
 
   .group:hover .\32xl\:group-hover\:text-default {
     color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-accent {
+    color: var(--text-default-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-accent-light {
+    color: var(--text-accent-light-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-muted {
+    color: var(--text-muted-color);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-muted-light {
+    color: var(--text-muted-light-color);
   }
 
   .\32xl\:focus-within\:text-red-50:focus-within {
@@ -110235,6 +113824,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .\32xl\:focus-within\:text-accent:focus-within {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus-within\:text-accent-light:focus-within {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus-within\:text-muted:focus-within {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus-within\:text-muted-light:focus-within {
+    color: var(--text-muted-light-color);
+  }
+
   .\32xl\:hover\:text-red-50:hover {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -110329,6 +113934,22 @@ select {
     color: var(--text-default-color);
   }
 
+  .\32xl\:hover\:text-accent:hover {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:hover\:text-accent-light:hover {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:hover\:text-muted:hover {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:hover\:text-muted-light:hover {
+    color: var(--text-muted-light-color);
+  }
+
   .\32xl\:focus\:text-red-50:focus {
     --tw-text-opacity: 1;
     color: rgba(254, 242, 242, var(--tw-text-opacity));
@@ -110421,6 +114042,22 @@ select {
 
   .\32xl\:focus\:text-default:focus {
     color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:text-accent:focus {
+    color: var(--text-default-color);
+  }
+
+  .\32xl\:focus\:text-accent-light:focus {
+    color: var(--text-accent-light-color);
+  }
+
+  .\32xl\:focus\:text-muted:focus {
+    color: var(--text-muted-color);
+  }
+
+  .\32xl\:focus\:text-muted-light:focus {
+    color: var(--text-muted-light-color);
   }
 
   .\32xl\:text-opacity-0 {
