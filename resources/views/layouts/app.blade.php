@@ -17,8 +17,8 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased theme-dark bg-page text-default">
-        <div class="bg-gray-100">
+    <body class="antialiased theme-light bg-page text-default">
+        <div id="app">
             <nav class="bg-header">
                 <div class="container mx-auto">
                     <div class="flex justify-between items-center py-2">
@@ -41,16 +41,25 @@
                         </h1>
 
                         <div>
-                            <div>{{ Auth::user()->name }}</div>
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
+                            <div class="flex items-center ml-auto">
 
-                                <x-dropdown-link :href="route('logout')"
-                                        onclick="event.preventDefault();
-                                                    this.closest('form').submit();">
-                                    {{ __('Log out') }}
-                                </x-dropdown-link>
-                            </form>
+                                <theme-switcher></theme-switcher>
+
+                                <a class="flex items-center text-default no-underline text-sm" href="#">
+                                    <img width="35" class="rounded-full mr-3" src="{{ gravatar_url(Auth::user()->email)}}">
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <!--form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+
+                                    <x-dropdown-link :href="route('logout')"
+                                            onclick="event.preventDefault();
+                                                        this.closest('form').submit();">
+                                        {{ __('Log out') }}
+                                    </x-dropdown-link>
+                                </form-->
+                            </div>
                         </div>
                     </div>
                 </div>
